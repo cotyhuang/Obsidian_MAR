@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, CSR, CTP, correlation-trading]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — CSR CTP (Correlation Trading Portfolio)
@@ -9,6 +10,8 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR20.5, MAR21.11, MAR21.58–21.61
 > [[MAR_20260323.pdf#page=18|MAR20.5, page 18]] — [[MAR_20260323.pdf#page=28|MAR21.11, page 28]] — [[MAR_20260323.pdf#page=49|MAR21.58–21.61, page 49]]
+> EU CRR3 Article 325o, 325an, 325ao
+> [[CRR_20260101.pdf#page=490|CRR Art. 325o, page 490]] — [[CRR_20260101.pdf#page=518|CRR Art. 325an–325ao, page 518]]
 
 ---
 
@@ -24,7 +27,7 @@ The CTP consists of:
 
 ---
 
-## 2. Risk Factors ([[MAR_20260323.pdf#page=28|MAR21.11, page 28]])
+## 2. Risk Factors ([[MAR_20260323.pdf#page=28|MAR21.11, page 28]] / [[CRR_20260101.pdf#page=490|CRR Art. 325o]])
 
 ### Delta
 - **Underlying** credit spread curves (bond and CDS) — not tranche spreads
@@ -44,12 +47,12 @@ The CTP consists of:
 
 ---
 
-## 3. Buckets & Risk Weights (MAR21.58–21.59)
+## 3. Buckets & Risk Weights (MAR21.58–21.59 / [[CRR_20260101.pdf#page=518|CRR Art. 325an]])
 
 ### Bucket Structure
 Same bucket structure as [[FRTB SA — CSR Non-Securitisation|CSR non-sec]] (MAR21.51), **except** no index buckets (17/18). Index CTP instruments are assigned to sector buckets based on 75% constituent mapping (FAQ1).
 
-### Risk Weights ([[MAR_20260323.pdf#page=49|MAR21.59, page 49]])
+### Risk Weights ([[MAR_20260323.pdf#page=49|MAR21.59, page 49]] / [[CRR_20260101.pdf#page=518|CRR Art. 325an]])
 
 | Bucket | Sector | RW |
 |---|---|---|
@@ -67,7 +70,7 @@ Same bucket structure as [[FRTB SA — CSR Non-Securitisation|CSR non-sec]] (MAR
 
 ---
 
-## 4. Intra-Bucket Correlations ([[MAR_20260323.pdf#page=50|MAR21.60, page 50]])
+## 4. Intra-Bucket Correlations ([[MAR_20260323.pdf#page=50|MAR21.60, page 50]] / [[CRR_20260101.pdf#page=519|CRR Art. 325ao]])
 
 Same formula as [[FRTB SA — CSR Non-Securitisation]] (ρ_name × ρ_tenor × ρ_basis), with one modification:
 
@@ -79,7 +82,7 @@ This lower basis correlation reflects the **larger basis risk** in the CTP.
 
 ---
 
-## 5. Inter-Bucket Correlations ([[MAR_20260323.pdf#page=50|MAR21.61, page 50]])
+## 5. Inter-Bucket Correlations ([[MAR_20260323.pdf#page=50|MAR21.61, page 50]] / [[CRR_20260101.pdf#page=519|CRR Art. 325ao]])
 
 Identical to [[FRTB SA — CSR Non-Securitisation]] cross-bucket correlations (MAR21.57).
 

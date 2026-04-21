@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SA, RRAO]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — Residual Risk Add-On (RRAO)
@@ -9,20 +10,22 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR23 — Standardised approach: residual risk add-on (effective 01 Jan 2023).
 > [[MAR_20260323.pdf#page=80|MAR23, page 80]]
+> EU CRR3 Article 325u
+> [[CRR_20260101.pdf#page=498|CRR Art. 325u, page 498]]
 
 ---
 
-## 1. Purpose ([[MAR_20260323.pdf#page=81|MAR23.1, page 81]])
+## 1. Purpose ([[MAR_20260323.pdf#page=81|MAR23.1, page 81]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 The RRAO captures market risks that are **not adequately covered** by the [[FRTB SA — Sensitivities-Based Method|SBM]] or [[FRTB SA — Default Risk Charge|DRC]]. It is calculated **in addition to** and **independently of** the other SA components.
 
 ---
 
-## 2. Instruments Subject to RRAO ([[MAR_20260323.pdf#page=81|MAR23.2, page 81]])
+## 2. Instruments Subject to RRAO ([[MAR_20260323.pdf#page=81|MAR23.2, page 81]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 Two categories:
 
-### A. Instruments with Exotic Underlyings ([[MAR_20260323.pdf#page=81|MAR23.3, page 81]])
+### A. Instruments with Exotic Underlyings ([[MAR_20260323.pdf#page=81|MAR23.3, page 81]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 Trading book instruments whose underlying exposure falls **outside the scope** of delta/vega/curvature in any SBM risk class, and outside DRC.
 
 Examples of exotic underlyings:
@@ -31,7 +34,7 @@ Examples of exotic underlyings:
 - Natural disasters
 - Future realised volatility (confirmed in FAQ1)
 
-### B. Instruments Bearing Other Residual Risks ([[MAR_20260323.pdf#page=81|MAR23.4, page 81]])
+### B. Instruments Bearing Other Residual Risks ([[MAR_20260323.pdf#page=81|MAR23.4, page 81]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 Instruments subject to vega/curvature that have **payoffs not replicable** as a finite linear combination of vanilla options, **or** instruments in the CTP (excluding recognised hedges).
 
 Types of residual risks (non-exhaustive, [[MAR_20260323.pdf#page=81|MAR23.5, page 81]]):
@@ -44,7 +47,7 @@ Types of residual risks (non-exhaustive, [[MAR_20260323.pdf#page=81|MAR23.5, pag
 
 ---
 
-## 3. Exemptions ([[MAR_20260323.pdf#page=82|MAR23.6, page 82]])
+## 3. Exemptions ([[MAR_20260323.pdf#page=82|MAR23.6, page 82]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 The following risks, **by themselves**, do not cause RRAO to apply:
 1. Cheapest-to-deliver risk
@@ -55,7 +58,7 @@ The following risks, **by themselves**, do not cause RRAO to apply:
 
 ---
 
-## 4. Exclusions ([[MAR_20260323.pdf#page=82|MAR23.7, page 82]])
+## 4. Exclusions ([[MAR_20260323.pdf#page=82|MAR23.7, page 82]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 | Exclusion | Condition |
 |---|---|
@@ -64,7 +67,7 @@ The following risks, **by themselves**, do not cause RRAO to apply:
 
 ---
 
-## 5. Calculation ([[MAR_20260323.pdf#page=82|MAR23.8, page 82]])
+## 5. Calculation ([[MAR_20260323.pdf#page=82|MAR23.8, page 82]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 $$\text{RRAO} = \sum_i \text{Notional}_i \times \text{Risk Weight}_i$$
 
@@ -80,7 +83,7 @@ A simple **gross notional sum** (no netting, no diversification):
 
 ---
 
-## 6. No Impact on SBM Scope ([[MAR_20260323.pdf#page=82|MAR23.8(1), page 82]])
+## 6. No Impact on SBM Scope ([[MAR_20260323.pdf#page=82|MAR23.8(1), page 82]] / [[CRR_20260101.pdf#page=498|CRR Art. 325u]])
 
 The instruments subject to RRAO **do not change** the scope of risk factors in the SBM or DRC — i.e. being in the RRAO does not exempt an instrument from delta/vega/curvature/DRC calculations, nor does it add new risk factors.
 

@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, FX, foreign-exchange]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — FX Risk
@@ -9,10 +10,12 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.14, MAR21.24, MAR21.86–21.89
 > [[MAR_20260323.pdf#page=30|MAR21.14, page 30]] — [[MAR_20260323.pdf#page=60|MAR21.86–21.89, page 60]]
+> EU CRR3 Article 325r, 325av–325ax
+> [[CRR_20260101.pdf#page=493|CRR Art. 325r, page 493]] — [[CRR_20260101.pdf#page=524|CRR Art. 325av–325ax, page 524]]
 
 ---
 
-## 1. Risk Factors ([[MAR_20260323.pdf#page=30|MAR21.14, page 30]])
+## 1. Risk Factors ([[MAR_20260323.pdf#page=30|MAR21.14, page 30]] / [[CRR_20260101.pdf#page=493|CRR Art. 325r]])
 
 ### Delta
 All exchange rates between:
@@ -38,13 +41,13 @@ Same definition as delta — exchange rates between denominated currency and rep
 
 ---
 
-## 2. Buckets ([[MAR_20260323.pdf#page=60|MAR21.86, page 60]])
+## 2. Buckets ([[MAR_20260323.pdf#page=60|MAR21.86, page 60]] / [[CRR_20260101.pdf#page=524|CRR Art. 325av]])
 
 Each exchange rate between a currency and the reporting currency constitutes a **separate bucket**.
 
 ---
 
-## 3. Delta Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.87–21.88, page 60]])
+## 3. Delta Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.87–21.88, page 60]] / [[CRR_20260101.pdf#page=524|CRR Art. 325av]])
 
 | Category | Risk Weight |
 |---|---|
@@ -67,13 +70,13 @@ Not applicable — each FX bucket contains only **one** risk factor (one exchang
 
 ---
 
-## 5. Inter-Bucket Correlation γ_{bc} ([[MAR_20260323.pdf#page=61|MAR21.89, page 61]])
+## 5. Inter-Bucket Correlation γ_{bc} ([[MAR_20260323.pdf#page=61|MAR21.89, page 61]] / [[CRR_20260101.pdf#page=524|CRR Art. 325ax]])
 
 $$\gamma = 60\%$$ (uniform across all FX buckets)
 
 ---
 
-## 6. Sensitivity Definition ([[MAR_20260323.pdf#page=34|MAR21.24, page 34]])
+## 6. Sensitivity Definition ([[MAR_20260323.pdf#page=34|MAR21.24, page 34]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 
 $$s_k = \frac{V_i(1.01 \cdot FX_k) - V_i(FX_k)}{0.01}$$
 
@@ -81,7 +84,7 @@ A **1% relative shift** in the exchange rate.
 
 ---
 
-## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]])
+## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]] / [[CRR_20260101.pdf#page=525|CRR Art. 325ay]])
 
 | Risk Class | Liquidity Horizon | Risk Weight |
 |---|---|---|
@@ -89,7 +92,7 @@ A **1% relative shift** in the exchange rate.
 
 ---
 
-## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=63|MAR21.98, page 63]])
+## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=63|MAR21.98, page 63]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 The curvature risk weight = the **delta risk weight** = 15% (relative shift).
 

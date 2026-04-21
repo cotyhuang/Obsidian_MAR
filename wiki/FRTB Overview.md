@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, BaselFramework, market-risk]
 sources:
   - "[[raw/Banking book Trading book comparison]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB Overview — Fundamental Review of the Trading Book
@@ -39,6 +40,8 @@ Key motivations:
 - **Three correlation scenarios** (high/medium/low) — capital = max of three
 - Plus [[FRTB SA — Default Risk Charge|Default Risk Charge (DRC)]] and [[FRTB SA — Residual Risk Add-On|Residual Risk Add-On (RRAO)]]
 - Serves as both a **standalone capital calculation** and a **floor** for IMA banks
+> [!info] Dual References
+> The wiki pages for the SA approach are structured with **dual references**, linking directly to both the **Basel MAR** standards and the corresponding **EU CRR3 (Alternative Standardised Approach)** articles.
 
 ### 2.4 Internal Models Approach (IMA)
 - Desk-level approval required (not bank-wide)

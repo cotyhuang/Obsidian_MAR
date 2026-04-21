@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, CSR, credit-spread]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — CSR Non-Securitisation
@@ -9,12 +10,14 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.9, MAR21.20, MAR21.51–21.57
 > [[MAR_20260323.pdf#page=27|MAR21.9, page 27]] — [[MAR_20260323.pdf#page=45|MAR21.51–21.57, page 45]]
+> EU CRR3 Article 325m, 325ah–325aj
+> [[CRR_20260101.pdf#page=488|CRR Art. 325m, page 488]] — [[CRR_20260101.pdf#page=513|CRR Art. 325ah–325aj, page 513]]
 
 ---
 
 ## 1. Risk Factors & Buckets
 
-### Delta Risk Factors ([[MAR_20260323.pdf#page=27|MAR21.9(1), page 27]])
+### Delta Risk Factors ([[MAR_20260323.pdf#page=27|MAR21.9(1), page 27]] / [[CRR_20260101.pdf#page=488|CRR Art. 325m]])
 Defined along **two dimensions**:
 - Issuer credit spread curves (bond and CDS separately)
 - Tenors: 0.5y, 1y, 3y, 5y, 10y
@@ -27,7 +30,7 @@ Defined along **one dimension** — the relevant issuer credit spread curve. Bon
 
 ---
 
-## 2. Buckets ([[MAR_20260323.pdf#page=45|MAR21.51, page 45]])
+## 2. Buckets ([[MAR_20260323.pdf#page=45|MAR21.51, page 45]] / [[CRR_20260101.pdf#page=513|CRR Art. 325ah]])
 
 Buckets are set along **credit quality** × **sector**:
 
@@ -54,7 +57,7 @@ Buckets are set along **credit quality** × **sector**:
 
 ---
 
-## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=46|MAR21.53, page 46]])
+## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=46|MAR21.53, page 46]] / [[CRR_20260101.pdf#page=513|CRR Art. 325ah]])
 
 Risk weights are **uniform** across all tenors within each bucket:
 
@@ -74,7 +77,7 @@ Risk weights are **uniform** across all tenors within each bucket:
 
 ---
 
-## 4. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=47|MAR21.54–21.56, page 47]])
+## 4. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=47|MAR21.54–21.56, page 47]] / [[CRR_20260101.pdf#page=514|CRR Art. 325ai]])
 
 ### Buckets 1–15
 $$\rho_{kl} = \rho_{name} \times \rho_{tenor} \times \rho_{basis}$$
@@ -93,7 +96,7 @@ Same structure but ρ_name = **80%** when different names (MAR21.55).
 
 ---
 
-## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=48|MAR21.57, page 48]])
+## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=48|MAR21.57, page 48]] / [[CRR_20260101.pdf#page=515|CRR Art. 325aj]])
 
 $$\gamma_{bc} = \gamma_{rating} \times \gamma_{sector}$$
 
@@ -115,7 +118,7 @@ $$\gamma_{bc} = \gamma_{rating} \times \gamma_{sector}$$
 
 ---
 
-## 6. Sensitivity Definition — CS01 ([[MAR_20260323.pdf#page=32|MAR21.20, page 32]])
+## 6. Sensitivity Definition — CS01 ([[MAR_20260323.pdf#page=32|MAR21.20, page 32]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 
 $$s_{k,cs_t} = \frac{V_i(r_t, cs_t + 0.0001) - V_i(r_t, cs_t)}{0.0001}$$
 
@@ -126,7 +129,7 @@ Where:
 
 ---
 
-## 7. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]])
+## 7. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 For CSR, the curvature risk weight is the **highest delta risk weight** in the bucket, applied as a parallel shift to all tenors.
 

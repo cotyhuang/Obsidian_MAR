@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, commodity]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — Commodity Risk
@@ -9,10 +10,12 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.13, MAR21.23, MAR21.81–21.85
 > [[MAR_20260323.pdf#page=29|MAR21.13, page 29]] — [[MAR_20260323.pdf#page=57|MAR21.81–21.85, page 57]]
+> EU CRR3 Article 325q, 325as–325au
+> [[CRR_20260101.pdf#page=491|CRR Art. 325q, page 491]] — [[CRR_20260101.pdf#page=522|CRR Art. 325as–325au, page 522]]
 
 ---
 
-## 1. Risk Factors ([[MAR_20260323.pdf#page=29|MAR21.13, page 29]])
+## 1. Risk Factors ([[MAR_20260323.pdf#page=29|MAR21.13, page 29]] / [[CRR_20260101.pdf#page=491|CRR Art. 325q]])
 
 ### Delta
 Defined along **two dimensions**:
@@ -32,7 +35,7 @@ Implied volatilities of options referencing commodity spot prices:
 
 ---
 
-## 2. Buckets & Delta Risk Weights ([[MAR_20260323.pdf#page=57|MAR21.82, page 57]])
+## 2. Buckets & Delta Risk Weights ([[MAR_20260323.pdf#page=57|MAR21.82, page 57]] / [[CRR_20260101.pdf#page=522|CRR Art. 325as]])
 
 | Bucket | Commodity Group | Examples | RW |
 |---|---|---|---|
@@ -50,7 +53,7 @@ Implied volatilities of options referencing commodity spot prices:
 
 ---
 
-## 3. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=57|MAR21.83, page 57]])
+## 3. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=57|MAR21.83, page 57]] / [[CRR_20260101.pdf#page=522|CRR Art. 325at]])
 
 $$\rho_{kl} = \rho_{commodity} \times \rho_{tenor} \times \rho_{location}$$
 
@@ -81,7 +84,7 @@ $$\rho_{kl} = \rho_{commodity} \times \rho_{tenor} \times \rho_{location}$$
 
 ---
 
-## 4. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=59|MAR21.85, page 59]])
+## 4. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=59|MAR21.85, page 59]] / [[CRR_20260101.pdf#page=523|CRR Art. 325au]])
 
 | Condition | γ |
 |---|---|
@@ -90,7 +93,7 @@ $$\rho_{kl} = \rho_{commodity} \times \rho_{tenor} \times \rho_{location}$$
 
 ---
 
-## 5. Sensitivity Definition ([[MAR_20260323.pdf#page=33|MAR21.23, page 33]])
+## 5. Sensitivity Definition ([[MAR_20260323.pdf#page=33|MAR21.23, page 33]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 
 $$s_k = \frac{V_i(1.01 \cdot CTY_k) - V_i(CTY_k)}{0.01}$$
 
@@ -98,7 +101,7 @@ A **1% relative shift** in the commodity spot price.
 
 ---
 
-## 6. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]])
+## 6. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]] / [[CRR_20260101.pdf#page=525|CRR Art. 325ay]])
 
 | Risk Class | Liquidity Horizon | Risk Weight |
 |---|---|---|
@@ -106,7 +109,7 @@ A **1% relative shift** in the commodity spot price.
 
 ---
 
-## 7. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]])
+## 7. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 The curvature risk weight is the **highest delta risk weight** in the bucket, applied as a **relative** parallel shift to all tenors. For example, gold (bucket 7, RW 20%): shift the curve up by 1.2× and down by 0.8× (FAQ1 under MAR21.99).
 

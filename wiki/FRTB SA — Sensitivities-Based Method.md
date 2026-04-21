@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, SA, BaselFramework]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — Sensitivities-Based Method
@@ -9,14 +10,16 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21 — Standardised approach: sensitivities-based method (effective 01 Jan 2023).
 > [[MAR_20260323.pdf#page=19|MAR21, page 19]]
+> EU CRR3 Article 325e–325h, 325ay–325az, 325g
+> [[CRR_20260101.pdf#page=474|CRR Art. 325e–325h, page 474]]
 
 ---
 
 ## 1. Overview
 
-The **Sensitivities-Based Method (SBM)** is the core component of the FRTB [[FRTB Overview|Standardised Approach (SA)]] for market risk capital. It calculates capital requirements based on the sensitivities of instruments to prescribed risk factors across seven risk classes. ([[MAR_20260323.pdf#page=16|MAR20, page 16]])
+The **Sensitivities-Based Method (SBM)** is the core component of the FRTB [[FRTB Overview|Standardised Approach (SA)]] for market risk capital. It calculates capital requirements based on the sensitivities of instruments to prescribed risk factors across seven risk classes. ([[MAR_20260323.pdf#page=16|MAR20, page 16]] / [[CRR_20260101.pdf#page=466|CRR Art. 325(1)]])
 
-The SA capital requirement is the **simple sum** of three components ([[MAR_20260323.pdf#page=17|MAR20.4, page 17]]):
+The SA capital requirement is the **simple sum** of three components ([[MAR_20260323.pdf#page=17|MAR20.4, page 17]] / [[CRR_20260101.pdf#page=466|CRR Art. 325(1)]]):
 
 $$\text{SA Capital} = \text{SBM} + \text{DRC} + \text{RRAO}$$
 
@@ -28,7 +31,7 @@ $$\text{SA Capital} = \text{SBM} + \text{DRC} + \text{RRAO}$$
 
 ## 2. The Seven Risk Classes
 
-The SBM defines seven risk classes ([[MAR_20260323.pdf#page=20|MAR21.1, page 20]]):
+The SBM defines seven risk classes ([[MAR_20260323.pdf#page=20|MAR21.1, page 20]] / [[CRR_20260101.pdf#page=474|CRR Art. 325e]]):
 
 | # | Risk Class | Wiki Page | MAR Reference |
 |---|---|---|---|
@@ -54,7 +57,7 @@ For each risk class, three risk measures are calculated (MAR20.4(1)):
 
 ---
 
-## 4. Key Terminology ([[MAR_20260323.pdf#page=20|MAR21.1, page 20]])
+## 4. Key Terminology ([[MAR_20260323.pdf#page=20|MAR21.1, page 20]] / [[CRR_20260101.pdf#page=474|CRR Art. 325d]])
 
 - **Risk factor**: A variable (e.g. equity price, interest rate tenor) affecting instrument value
 - **Bucket**: A set of risk factors grouped by common characteristics
@@ -65,7 +68,7 @@ For each risk class, three risk measures are calculated (MAR20.4(1)):
 
 ## 5. Delta & Vega Aggregation Formula
 
-The step-by-step process for delta and vega ([[MAR_20260323.pdf#page=21|MAR21.4, page 21]]):
+The step-by-step process for delta and vega ([[MAR_20260323.pdf#page=21|MAR21.4, page 21]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]]):
 
 ### Step 1 — Net Sensitivities
 For each risk factor *k*, net all sensitivities across the portfolio:
@@ -96,7 +99,7 @@ Where:
 
 ## 6. Curvature Aggregation Formula
 
-Curvature differs from delta/vega in that it applies **upward and downward shocks** ([[MAR_20260323.pdf#page=23|MAR21.5, page 23]]):
+Curvature differs from delta/vega in that it applies **upward and downward shocks** ([[MAR_20260323.pdf#page=23|MAR21.5, page 23]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]]):
 
 ### Step 1 — Compute Curvature Risk Charges
 For each curvature risk factor *k*, aggregate across all instruments *i* ([[MAR_20260323.pdf#page=24|MAR21.5(2), page 24]]):
@@ -128,7 +131,7 @@ Where $S_b = \sum_k CVR_k^{+}$ (or $CVR_k^{-}$) for the selected scenario direct
 
 ---
 
-## 7. Three Correlation Scenarios ([[MAR_20260323.pdf#page=25|MAR21.6–21.7, page 25]])
+## 7. Three Correlation Scenarios ([[MAR_20260323.pdf#page=25|MAR21.6–21.7, page 25]] / [[CRR_20260101.pdf#page=480|CRR Art. 325h]])
 
 > [!important] This is a defining feature of the FRTB SA.
 
@@ -146,7 +149,7 @@ Within each scenario, the bank sums delta + vega + curvature across all seven ri
 
 ---
 
-## 8. Sensitivity Definitions ([[MAR_20260323.pdf#page=29|MAR21.15–21.30, page 29]])
+## 8. Sensitivity Definitions ([[MAR_20260323.pdf#page=29|MAR21.15–21.30, page 29]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 
 All sensitivities must be expressed in the bank's **reporting currency** ([[MAR_20260323.pdf#page=29|MAR21.15, page 29]]), and computed using the bank's **independent risk control unit's pricing models** ([[MAR_20260323.pdf#page=30|MAR21.17, page 30]]).
 
@@ -161,7 +164,7 @@ All sensitivities must be expressed in the bank's **reporting currency** ([[MAR_
 
 ---
 
-## 9. Vega Risk Weights ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]])
+## 9. Vega Risk Weights ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]] / [[CRR_20260101.pdf#page=525|CRR Art. 325ay]])
 
 The vega risk weight formula (footnote 24):
 
@@ -180,7 +183,7 @@ $$RW_k = \min\left(RW_\sigma \cdot \frac{\sqrt{LH_{risk\_class}}}{\sqrt{10}},\; 
 
 ---
 
-## 10. Curvature Risk Weights ([[MAR_20260323.pdf#page=63|MAR21.98–21.99, page 63]])
+## 10. Curvature Risk Weights ([[MAR_20260323.pdf#page=63|MAR21.98–21.99, page 63]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 | Risk Class | Curvature Risk Weight |
 |---|---|
@@ -192,7 +195,7 @@ $$RW_k = \min\left(RW_\sigma \cdot \frac{\sqrt{LH_{risk\_class}}}{\sqrt{10}},\; 
 
 ---
 
-## 11. Treatment of Index Instruments ([[MAR_20260323.pdf#page=36|MAR21.31–21.34, page 36]])
+## 11. Treatment of Index Instruments ([[MAR_20260323.pdf#page=36|MAR21.31–21.34, page 36]] / [[CRR_20260101.pdf#page=480|CRR Art. 325i]])
 
 - **Look-through** is the default for indices and multi-underlying options
 - Banks may opt **not** to look through for listed, widely recognised equity/credit indices meeting criteria (≥20 constituents, no single name >25%, top 10% <60%, market cap ≥ USD 40bn) — [[MAR_20260323.pdf#page=37|MAR21.31, page 37]]

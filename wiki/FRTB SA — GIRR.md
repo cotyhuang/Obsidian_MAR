@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, GIRR, interest-rate]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — GIRR (General Interest Rate Risk)
@@ -9,14 +10,16 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.8(1)–(6), MAR21.19, MAR21.41–21.50
 > [[MAR_20260323.pdf#page=26|MAR21.8, page 26]] — [[MAR_20260323.pdf#page=42|MAR21.41–21.50, page 42]]
+> EU CRR3 Article 325l, 325ae–325ag
+> [[CRR_20260101.pdf#page=485|CRR Art. 325l, page 485]] — [[CRR_20260101.pdf#page=511|CRR Art. 325ae–325ag, page 511]]
 
 ---
 
 ## 1. Risk Factors & Buckets
 
-**Each currency** constitutes a separate GIRR bucket ([[MAR_20260323.pdf#page=42|MAR21.41, page 42]]).
+**Each currency** constitutes a separate GIRR bucket ([[MAR_20260323.pdf#page=42|MAR21.41, page 42]] / [[CRR_20260101.pdf#page=485|CRR Art. 325l]]).
 
-### Delta Risk Factors ([[MAR_20260323.pdf#page=26|MAR21.8, page 26]])
+### Delta Risk Factors ([[MAR_20260323.pdf#page=26|MAR21.8, page 26]] / [[CRR_20260101.pdf#page=485|CRR Art. 325l]])
 Three types of GIRR delta risk factors:
 
 | Risk Factor                | Dimensions                                           | Term Structure                                             |
@@ -45,7 +48,7 @@ Inflation and cross-currency basis vega is considered along the **single dimensi
 
 ---
 
-## 2. Delta Risk Weights ([[MAR_20260323.pdf#page=42|MAR21.42–21.44, page 42]])
+## 2. Delta Risk Weights ([[MAR_20260323.pdf#page=42|MAR21.42–21.44, page 42]] / [[CRR_20260101.pdf#page=511|CRR Art. 325ae]])
 
 ### Risk-Free Yield Curve Tenors
 
@@ -61,11 +64,11 @@ Inflation and cross-currency basis vega is considered along the **single dimensi
 | Cross-currency basis | 1.6% |
 
 > [!tip] Specified Currency Discount
-> For **EUR, USD, GBP, AUD, JPY, SEK, CAD** and the bank's domestic reporting currency, all GIRR risk weights may be divided by **√2** ≈ 0.707, at the bank's discretion ([[MAR_20260323.pdf#page=43|MAR21.44, page 43]]).
+> For **EUR, USD, GBP, AUD, JPY, SEK, CAD** and the bank's domestic reporting currency, all GIRR risk weights may be divided by **√2** ≈ 0.707, at the bank's discretion ([[MAR_20260323.pdf#page=43|MAR21.44, page 43]] / [[CRR_20260101.pdf#page=511|CRR Art. 325ae]]). In the EU, EUR is automatically explicitly recognized for this discount.
 
 ---
 
-## 3. Intra-Bucket Correlations $ρ_{kl}$ ([[MAR_20260323.pdf#page=43|MAR21.45–21.49, page 43]])
+## 3. Intra-Bucket Correlations $ρ_{kl}$ ([[MAR_20260323.pdf#page=43|MAR21.45–21.49, page 43]] / [[CRR_20260101.pdf#page=512|CRR Art. 325af]])
 
 Three correlation rules within a GIRR bucket:
 
@@ -76,18 +79,18 @@ Three correlation rules within a GIRR bucket:
 The correlation formula (footnote 13):
 $$\rho_{kl} = \max\left(e^{-\theta \cdot \frac{|T_k - T_l|}{\min(T_k,\, T_l)}},\; 40\%\right) \quad \text{where } \theta = 3\%$$
 
-| | 0.25y | 0.5y | 1y | 2y | 3y | 5y | 10y | 15y | 20y | 30y |
-|---|---|---|---|---|---|---|---|---|---|---|
-| **0.25y** | 100% | 97.0% | 91.4% | 81.1% | 71.9% | 56.6% | 40.0% | 40.0% | 40.0% | 40.0% |
-| **0.5y** | — | 100% | 97.0% | 91.4% | 86.1% | 76.3% | 56.6% | 41.9% | 40.0% | 40.0% |
-| **1y** | — | — | 100% | 97.0% | 94.2% | 88.7% | 76.3% | 65.7% | 56.6% | 41.9% |
-| **2y** | — | — | — | 100% | 98.5% | 95.6% | 88.7% | 82.3% | 76.3% | 65.7% |
-| **3y** | — | — | — | — | 100% | 98.0% | 93.2% | 88.7% | 84.4% | 76.3% |
-| **5y** | — | — | — | — | — | 100% | 97.0% | 94.2% | 91.4% | 86.1% |
-| **10y** | — | — | — | — | — | — | 100% | 98.5% | 97.0% | 94.2% |
-| **15y** | — | — | — | — | — | — | — | 100% | 99.0% | 97.0% |
-| **20y** | — | — | — | — | — | — | — | — | 100% | 98.5% |
-| **30y** | — | — | — | — | — | — | — | — | — | 100% |
+|           | 0.25y | 0.5y  | 1y    | 2y    | 3y    | 5y    | 10y   | 15y   | 20y   | 30y   |     |
+| --------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | --- |
+| **0.25y** | 100%  | 97.0% | 91.4% | 81.1% | 71.9% | 56.6% | 40.0% | 40.0% | 40.0% | 40.0% |     |
+| **0.5y**  | —     | 100%  | 97.0% | 91.4% | 86.1% | 76.3% | 56.6% | 41.9% | 40.0% | 40.0% |     |
+| **1y**    | —     | —     | 100%  | 97.0% | 94.2% | 88.7% | 76.3% | 65.7% | 56.6% | 41.9% |     |
+| **2y**    | —     | —     | —     | 100%  | 98.5% | 95.6% | 88.7% | 82.3% | 76.3% | 65.7% |     |
+| **3y**    | —     | —     | —     | —     | 100%  | 98.0% | 93.2% | 88.7% | 84.4% | 76.3% |     |
+| **5y**    | —     | —     | —     | —     | —     | 100%  | 97.0% | 94.2% | 91.4% | 86.1% |     |
+| **10y**   | —     | —     | —     | —     | —     | —     | 100%  | 98.5% | 97.0% | 94.2% |     |
+| **15y**   | —     | —     | —     | —     | —     | —     | —     | 100%  | 99.0% | 97.0% |     |
+| **20y**   | —     | —     | —     | —     | —     | —     | —     | —     | 100%  | 98.5% |     |
+| **30y**   | —     | —     | —     | —     | —     | —     | —     | —     | —     | 100%  |     |
 
 ### Different Tenor, Different Curves
 ρ = (same-curve correlation) × **99.90%** (MAR21.47)
@@ -100,7 +103,7 @@ $$\rho_{kl} = \max\left(e^{-\theta \cdot \frac{|T_k - T_l|}{\min(T_k,\, T_l)}},\
 
 ---
 
-## 4. Inter-Bucket Correlation $γ_{bc}$ ([[MAR_20260323.pdf#page=44|MAR21.50, page 44]])
+## 4. Inter-Bucket Correlation $γ_{bc}$ ([[MAR_20260323.pdf#page=44|MAR21.50, page 44]] / [[CRR_20260101.pdf#page=512|CRR Art. 325ag]])
 
 Cross-currency correlation: γ = **50%**
 
@@ -116,7 +119,7 @@ Cross-currency correlation: γ = **50%**
 
 ---
 
-## 6. Sensitivity Definition — PV01 ([[MAR_20260323.pdf#page=31|MAR21.19, page 31]])
+## 6. Sensitivity Definition — PV01 ([[MAR_20260323.pdf#page=31|MAR21.19, page 31]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 
 $$s_{k,r_t} = \frac{V_i(r_t + 0.0001, cs_t) - V_i(r_t, cs_t)}{0.0001}$$
 
@@ -129,7 +132,7 @@ Where:
 
 ---
 
-## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]])
+## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]] / [[CRR_20260101.pdf#page=525|CRR Art. 325ay]])
 
 | Risk Class | Liquidity Horizon | Risk Weight |
 |---|---|---|
@@ -139,13 +142,13 @@ Vega sensitivity definition: $\text{Vega}_{k} = vega \times \sigma_{implied}$ (M
 
 ---
 
-## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]])
+## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=64|MAR21.99, page 64]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 The curvature risk weight for GIRR is the **highest delta risk weight** in the bucket = **1.7%** (the 0.25y tenor weight), applied as a parallel shift to all tenors of all risk-free yield curves in that currency.
 
 ---
 
-## 9. Vega Intra-Bucket Correlations ([[MAR_20260323.pdf#page=61|MAR21.93, page 61]])
+## 9. Vega Intra-Bucket Correlations ([[MAR_20260323.pdf#page=61|MAR21.93, page 61]] / [[CRR_20260101.pdf#page=526|CRR Art. 325az]])
 
 GIRR vega correlations are derived from **two dimensions** — option maturity and underlying maturity:
 

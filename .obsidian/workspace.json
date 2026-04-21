@@ -11,10 +11,32 @@
             "id": "4fc4b532730f6236",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/FRTB SA — GIRR.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "FRTB SA — GIRR"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0a6dc7cd365c6d39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4152240a05754bfb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "raw/CRR_20260101.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CRR_20260101"
             }
           }
         ]
@@ -74,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 494.5110321044922
+    "width": 362.5086555480957
   },
   "right": {
     "id": "5212d204388528ae",
@@ -90,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outputs/2026-04-21 — Persistence Setup — TASKS.md",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-04-21 — Persistence Setup — TASKS"
+              "title": "Backlinks for FRTB SA — GIRR"
             }
           },
           {
@@ -109,12 +131,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "outputs/2026-04-21 — Persistence Setup — TASKS.md",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-04-21 — Persistence Setup — TASKS"
+              "title": "Outgoing links from FRTB SA — GIRR"
             }
           },
           {
@@ -152,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "outputs/2026-04-21 — Persistence Setup — TASKS.md",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-21 — Persistence Setup — TASKS"
+              "title": "Outline of FRTB SA — GIRR"
             }
           }
         ]
@@ -179,34 +201,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "ee000d2adeac91f7",
+  "active": "4fc4b532730f6236",
   "lastOpenFiles": [
+    "raw/CRR_20260101.pdf",
+    "wiki/FRTB SA — GIRR.md",
+    "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
+    "wiki/Banking Book vs Trading Book.md",
+    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
+    "raw/MAR_20260323_extracted.md",
+    "raw/crr_structure.txt",
+    "raw/CRR_20260101_extracted.md",
+    "raw/Banking book Trading book comparison.md",
+    "outputs/2026-04-21 — Health Check.md",
+    "Basel Committee on Banking Supervision.md",
+    "raw/test PDF link.md",
+    "raw/CRR_20260101.pdf.crdownload",
+    "raw/CRR3 Market Risk Summary.md",
+    "raw/MAR_20260323.pdf",
+    "raw/FRTB Impact Analysis.md",
+    "wiki/Basel RBC25.md",
+    "wiki/FRTB SA — Sensitivities-Based Method.md",
+    "wiki/FRTB SA — Residual Risk Add-On.md",
     "outputs/2026-04-21 — Persistence Setup — PLAN.md",
     "outputs/2026-04-21 — Persistence Setup — TASKS.md",
+    "agent.md",
+    "TASKS.md",
     "wiki/Internal Risk Transfers.md",
     "wiki/Trading Intent.md",
-    "TASKS.md",
-    "agent.md",
-    "raw/FRTB Impact Analysis.md",
     "wiki/FRTB SA — Default Risk Charge.md",
-    "raw/CRR3 Market Risk Summary.md",
-    "wiki/FRTB SA — GIRR.md",
     "wiki/Git Status Icons in VSCode.md",
     "PLAN.md",
-    "wiki/FRTB SA — Commodity Risk.md",
-    "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
-    "wiki/FRTB SA — CSR CTP.md",
-    "wiki/FRTB SA — CSR Non-Securitisation.md",
-    "wiki/FRTB Overview.md",
-    "wiki/FRTB SA — Residual Risk Add-On.md",
-    "outputs/2026-04-21 — Health Check.md",
-    "wiki/Basel RBC25.md",
-    "raw/MAR_20260323.pdf",
-    "wiki/Banking Book vs Trading Book.md",
-    "wiki/EBA CRR — Trading and Banking Book.md",
-    "wiki/Basel vs EBA — Boundary Comparison.md",
-    "wiki/FRTB SA — Sensitivities-Based Method.md",
-    "wiki/INDEX.md",
-    "wiki/FRTB SA — CSR Securitisation.md"
+    "wiki/FRTB SA — Commodity Risk.md"
   ]
 }

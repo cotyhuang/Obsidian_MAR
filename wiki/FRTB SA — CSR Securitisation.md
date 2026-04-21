@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, CSR, securitisation]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — CSR Securitisation (Non-CTP)
@@ -9,12 +10,14 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.10, MAR21.62–21.71
 > [[MAR_20260323.pdf#page=28|MAR21.10, page 28]] — [[MAR_20260323.pdf#page=51|MAR21.62–21.71, page 51]]
+> EU CRR3 Article 325n, 325ak–325am
+> [[CRR_20260101.pdf#page=488|CRR Art. 325n, page 488]] — [[CRR_20260101.pdf#page=516|CRR Art. 325ak–325am, page 516]]
 
 ---
 
 ## 1. Risk Factors
 
-### Delta (MAR21.10(2))
+### Delta (MAR21.10(2) / [[CRR_20260101.pdf#page=488|CRR Art. 325n]])
 - **Tranche credit spread curves** (not underlying issuer curves)
 - Tenors: 0.5y, 1y, 3y, 5y, 10y
 - Sensitivities (CS01) calculated with respect to the **spread of the tranche** (MAR21.10(1))
@@ -29,7 +32,7 @@ created: 2026-04-21
 
 ---
 
-## 2. Buckets ([[MAR_20260323.pdf#page=51|MAR21.62, page 51]])
+## 2. Buckets ([[MAR_20260323.pdf#page=51|MAR21.62, page 51]] / [[CRR_20260101.pdf#page=516|CRR Art. 325ak]])
 
 25 buckets along **seniority/credit quality** × **asset class**:
 
@@ -42,7 +45,7 @@ created: 2026-04-21
 
 ---
 
-## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=52|MAR21.64–21.67, page 52]])
+## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=52|MAR21.64–21.67, page 52]] / [[CRR_20260101.pdf#page=516|CRR Art. 325ak]])
 
 ### Senior IG (Buckets 1–8)
 
@@ -68,7 +71,7 @@ created: 2026-04-21
 
 ---
 
-## 4. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=52|MAR21.68, page 52]])
+## 4. Intra-Bucket Correlations ρ_{kl} ([[MAR_20260323.pdf#page=52|MAR21.68, page 52]] / [[CRR_20260101.pdf#page=517|CRR Art. 325al]])
 
 $$\rho_{kl} = \rho_{tranche} \times \rho_{tenor} \times \rho_{basis}$$
 
@@ -85,7 +88,7 @@ No correlation — simple sum of absolute values of net weighted sensitivities (
 
 ---
 
-## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=53|MAR21.70–21.71, page 53]])
+## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=53|MAR21.70–21.71, page 53]] / [[CRR_20260101.pdf#page=517|CRR Art. 325am]])
 
 - **γ = 0%** between all buckets 1–24
 - Bucket 25 is simply **added** to the aggregate — no diversification (MAR21.71)

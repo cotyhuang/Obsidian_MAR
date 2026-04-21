@@ -4,6 +4,7 @@ sources:
   - "[[raw/MAR_20260323]]"
   - "[[raw/CRR3 Market Risk Summary]]"
   - "[[raw/FRTB Impact Analysis]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — Basel vs CRR3 Comparison

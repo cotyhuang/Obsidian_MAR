@@ -2,6 +2,7 @@
 tags: [MAR, FRTB, SbM, equity]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR_20260101.pdf]]"
 created: 2026-04-21
 ---
 # FRTB SA — Equity Risk
@@ -9,10 +10,12 @@ created: 2026-04-21
 > [!info] Regulatory Reference
 > Basel MAR21.12, MAR21.21–21.22, MAR21.72–21.80
 > [[MAR_20260323.pdf#page=29|MAR21.12, page 29]] — [[MAR_20260323.pdf#page=53|MAR21.72–21.80, page 53]]
+> EU CRR3 Article 325p, 325ap–325ar
+> [[CRR_20260101.pdf#page=490|CRR Art. 325p, page 490]] — [[CRR_20260101.pdf#page=519|CRR Art. 325ap–325ar, page 519]]
 
 ---
 
-## 1. Risk Factors ([[MAR_20260323.pdf#page=29|MAR21.12, page 29]])
+## 1. Risk Factors ([[MAR_20260323.pdf#page=29|MAR21.12, page 29]] / [[CRR_20260101.pdf#page=490|CRR Art. 325p]])
 
 | Type | Delta | Vega | Curvature |
 |---|---|---|---|
@@ -24,7 +27,7 @@ Implied volatilities of options referencing equity spot prices, along **one dime
 
 ---
 
-## 2. Buckets ([[MAR_20260323.pdf#page=53|MAR21.72, page 53]])
+## 2. Buckets ([[MAR_20260323.pdf#page=53|MAR21.72, page 53]] / [[CRR_20260101.pdf#page=519|CRR Art. 325ap]])
 
 13 buckets along **market cap** × **economy** × **sector**:
 
@@ -51,7 +54,7 @@ Implied volatilities of options referencing equity spot prices, along **one dime
 
 ---
 
-## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=55|MAR21.77, page 55]])
+## 3. Delta Risk Weights ([[MAR_20260323.pdf#page=55|MAR21.77, page 55]] / [[CRR_20260101.pdf#page=519|CRR Art. 325ap]])
 
 | Bucket | Spot Price RW | Repo Rate RW |
 |---|---|---|
@@ -73,7 +76,7 @@ Implied volatilities of options referencing equity spot prices, along **one dime
 
 ---
 
-## 4. Intra-Bucket Correlations ρ ([[MAR_20260323.pdf#page=55|MAR21.78, page 55]])
+## 4. Intra-Bucket Correlations ρ ([[MAR_20260323.pdf#page=55|MAR21.78, page 55]] / [[CRR_20260101.pdf#page=520|CRR Art. 325aq]])
 
 ### Same Issuer, Spot vs Repo
 ρ = **99.90%**
@@ -96,7 +99,7 @@ No correlation — simple sum of absolute values of net weighted sensitivities (
 
 ---
 
-## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=56|MAR21.80, page 56]])
+## 5. Inter-Bucket Correlations γ_{bc} ([[MAR_20260323.pdf#page=56|MAR21.80, page 56]] / [[CRR_20260101.pdf#page=521|CRR Art. 325ar]])
 
 | Condition | γ |
 |---|---|
@@ -109,15 +112,15 @@ No correlation — simple sum of absolute values of net weighted sensitivities (
 
 ## 6. Sensitivity Definitions
 
-### Delta Equity Spot ([[MAR_20260323.pdf#page=32|MAR21.21, page 32]])
+### Delta Equity Spot ([[MAR_20260323.pdf#page=32|MAR21.21, page 32]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 $$s_k = \frac{V_i(1.01 \cdot EQ_k) - V_i(EQ_k)}{0.01}$$
 
-### Delta Equity Repo Rate ([[MAR_20260323.pdf#page=33|MAR21.22, page 33]])
+### Delta Equity Repo Rate ([[MAR_20260323.pdf#page=33|MAR21.22, page 33]] / [[CRR_20260101.pdf#page=475|CRR Art. 325f]])
 $$s_k = \frac{V_i(RepoTS_k + 0.0001) - V_i(RepoTS_k)}{0.0001}$$
 
 ---
 
-## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]])
+## 7. Vega Risk Weight ([[MAR_20260323.pdf#page=60|MAR21.92, page 60]] / [[CRR_20260101.pdf#page=525|CRR Art. 325ay]])
 
 | Sub-class | Liquidity Horizon | Risk Weight |
 |---|---|---|
@@ -126,7 +129,7 @@ $$s_k = \frac{V_i(RepoTS_k + 0.0001) - V_i(RepoTS_k)}{0.0001}$$
 
 ---
 
-## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=63|MAR21.98, page 63]])
+## 8. Curvature Risk Weight ([[MAR_20260323.pdf#page=63|MAR21.98, page 63]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 The curvature risk weight = the **delta risk weight** for equity spot (relative shift). No curvature for equity repo rates.
 
