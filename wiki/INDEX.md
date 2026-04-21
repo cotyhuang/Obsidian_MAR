@@ -55,4 +55,11 @@ created: 2026-04-21
 
 ## Sources
 
-All wiki content is distilled from raw materials in `[[raw/]]`. See individual pages for specific source attributions.
+All wiki content is distilled from raw materials in `raw/`:
+
+| Raw Source | Content |
+|---|---|
+| [[raw/MAR_20260323]] | Official Basel MAR standard (PDF, 188 pages) — MAR20–23 |
+| [[raw/CRR3 Market Risk Summary]] | EU CRR3 (Regulation 2024/1623) market risk provisions |
+| [[raw/FRTB Impact Analysis]] | EBA benchmarking, capital impact estimates, global divergence |
+

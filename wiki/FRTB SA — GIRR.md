@@ -251,6 +251,71 @@ $$\text{GIRR Delta Capital} = \max(3{,}758,\; 3{,}818,\; 4{,}224) = \mathbf{4{,}
 
 ---
 
+## 11. Worked Example — GIRR Vega Capital
+
+> [!example] EUR Swaption Portfolio — Two GIRR Options
+
+### Setup
+
+A EUR-reporting bank holds two EUR swaptions on the same risk-free curve (€STR OIS). GIRR vega risk weight = **100%** (LH = 60 days, [[MAR_20260323.pdf#page=60|MAR21.92, page 60]]).
+
+| # | Instrument | Option Maturity ($T$) | Underlying Tenor ($T^U$) | Vega (∂V/∂σ) | σ_implied | Vega Sensitivity |
+|---|---|---|---|---|---|---|
+| 1 | Payer swaption | 1y | 5y | +120,000 | 45% (0.45) | +54,000 |
+| 2 | Receiver swaption | 3y | 5y | −80,000 | 52% (0.52) | −41,600 |
+
+**Vega sensitivity** ([[MAR_20260323.pdf#page=34|MAR21.25, page 34]]):
+$$s_k = \text{vega}_k \times \sigma_{k,\text{implied}}$$
+
+- Swaption 1: $s_1 = 120{,}000 \times 0.45 = +54{,}000$
+- Swaption 2: $s_2 = -80{,}000 \times 0.52 = -41{,}600$
+
+### Step 1 — Weighted Sensitivities
+
+$$WS_k = s_k \times RW_k$$
+
+| # | $s_k$ | $RW$ | $WS_k$ |
+|---|---|---|---|
+| 1 | +54,000 | 100% | **+54,000** |
+| 2 | −41,600 | 100% | **−41,600** |
+
+### Step 2 — Vega Correlation ([[MAR_20260323.pdf#page=61|MAR21.93, page 61]])
+
+$$\rho_{12} = \rho^{(\text{option})}_{12} \times \rho^{(\text{underlying})}_{12}$$
+
+**Option maturity correlation** ($T_1 = 1y$, $T_2 = 3y$, $\alpha = 1\%$):
+$$\rho^{(\text{option})} = e^{-0.01 \times \frac{|1 - 3|}{\min(1, 3)}} = e^{-0.01 \times 2} = e^{-0.02} = 0.9802$$
+
+**Underlying maturity correlation** ($T_1^U = 5y$, $T_2^U = 5y$):
+$$\rho^{(\text{underlying})} = e^{-0.01 \times \frac{|5 - 5|}{\min(5, 5)}} = e^{0} = 1.000$$
+
+$$\rho_{12} = 0.9802 \times 1.000 = \mathbf{0.9802}$$
+
+> [!note] Both swaptions have the same underlying tenor (5y swap), so the underlying correlation is 1.0. The only source of decorrelation is the different option maturities (1y vs 3y).
+
+### Step 3 — Intra-Bucket Aggregation
+
+$$K_{EUR}^2 = WS_1^2 + WS_2^2 + 2 \times \rho_{12} \times WS_1 \times WS_2$$
+
+| Term | Calculation | Value |
+|---|---|---|
+| $WS_1^2$ | 54,000² | 2,916,000,000 |
+| $WS_2^2$ | (−41,600)² | 1,730,560,000 |
+| $2\rho_{12} WS_1 WS_2$ | 2 × 0.9802 × 54,000 × (−41,600) | −4,403,836,599 |
+| **Sum** | | **242,723,401** |
+
+$$K_{EUR} = \sqrt{242{,}723{,}401} = \mathbf{15{,}580}$$
+
+### Step 4 — Final Capital
+
+Single currency, single bucket:
+$$\text{GIRR Vega Capital (medium)} = \mathbf{15{,}580 \text{ EUR}}$$
+
+> [!tip] Interpretation
+> Despite the two swaptions having almost perfect correlation (ρ = 98%), a material vega capital remains because the positions don't fully offset — the payer (+54k) is larger than the receiver (−41.6k). The **net** vega exposure (12.4k) drives the capital, amplified slightly by the imperfect correlation.
+
+---
+
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]

@@ -2,6 +2,8 @@
 tags: [MAR, FRTB, CRR3, EBA, BaselFramework, comparison]
 sources:
   - "[[raw/MAR_20260323]]"
+  - "[[raw/CRR3 Market Risk Summary]]"
+  - "[[raw/FRTB Impact Analysis]]"
 created: 2026-04-21
 ---
 # FRTB SA — Basel vs CRR3 Comparison
@@ -17,11 +19,12 @@ created: 2026-04-21
 | Milestone | Basel | EU (CRR3) |
 |---|---|---|
 | Final standard | January 2019 | June 2024 (Regulation published) |
-| Effective date | 1 January 2023 | 1 January 2025 (SA reporting) / 1 January 2026 (binding) |
-| IMA go-live | 1 January 2023 | Phased: 2026–2028 |
+| Effective date | 1 January 2023 | 1 January 2025 (SA reporting) / **1 January 2027** (binding capital) |
+| IMA go-live | 1 January 2023 | Phased: 2027–2029 |
+| Output floor fully phased | 72.5% from 2023 | Phased: 50% (2025) → 72.5% (2030) |
 
 > [!warning] Key Divergence
-> Basel intended FRTB to apply from Jan 2023; the EU deferred the binding capital requirement to **2025–2026**, with extended transition periods for some elements.
+> Basel intended FRTB to apply from Jan 2023. The EU initially targeted 2025–2026 but has exercised **Article 461a** to defer binding capital requirements to **1 January 2027**, to preserve level playing field with non-EU jurisdictions (US & UK also delayed). During the deferral, institutions continue using existing (pre-FRTB) methodologies.
 
 ---
 
@@ -64,8 +67,10 @@ created: 2026-04-21
 - The thresholds are tighter than Basel's general guidance
 
 ### 4.2 Transitional Arrangements
-- **SA Output Floor**: CRR3 phases in the output floor on IMA vs SA gradually (72.5% by 2030)
+- **SA Output Floor**: Phased in from 50% (2025) to 72.5% by 2030
+- **Transitional multipliers**: EC consulted on temporary ceilings to neutralise capital volatility upon FRTB go-live (up to 3-year period until 2029)
 - **DRC**: Transitional provisions for the treatment of certain securitisation exposures under banking book equivalence mapping
+- **Disclosure**: Deferred to align with the 2027 binding application date
 
 ### 4.3 EBA Technical Standards
 CRR3 mandates EBA to develop binding technical standards (RTS/ITS) on:
@@ -94,8 +99,34 @@ CRR3 mandates EBA to develop binding technical standards (RTS/ITS) on:
 
 ## 6. Impact Studies
 
-> [!note] Open Area
-> Consulting reports (Oliver Wyman, McKinsey, EBA QIS) have estimated that FRTB SA produces capital increases of **40–70%** compared to Basel 2.5 for the average trading book, with significant variation by asset class. EU-specific impact is shaped by the transitional provisions and proportionality measures in CRR3.
+### Capital Impact Estimates
+
+| Category | Estimated SA Capital Increase vs Basel 2.5 |
+|---|---|
+| Average trading book | +40–70% |
+| Diversified banks | +50–60% |
+| GIRR-heavy banks | +30–50% (benefit from specified currency discount) |
+| Equity-heavy banks | +60–100% |
+| Exotic/structured desks | +100%+ (RRAO adds 1% of notional) |
+
+### EBA 2024 Benchmarking Key Findings
+- SbM Own Funds Requirements show **significantly lower dispersion** than traditional VaR/sVaR — improved consistency
+- Areas of inconsistency: DRC application, RRAO scoping, risk factor bucketing
+- Data quality directly impacts capital consumption (incorrect complexity flags → unnecessary RRAO charges)
+
+### Global Implementation Divergence (as of April 2026)
+
+| Jurisdiction | FRTB Capital Status | Timeline |
+|---|---|---|
+| Basel Committee | Effective 1 Jan 2023 | — |
+| **EU (CRR3)** | Reporting from 2025; binding deferred to **2027** | Output floor phased to 2030 |
+| **UK (PRA)** | Binding from **1 Jan 2027** | Aligned with EU delay |
+| US (Basel III Endgame) | Significantly delayed / uncertain | Political headwinds |
+| Japan | Implemented 2024 | — |
+| Singapore (MAS) | Implemented 2023 | — |
+| Hong Kong (HKMA) | Implemented 2024 | — |
+
+> [!note] Sources: [[raw/CRR3 Market Risk Summary]], [[raw/FRTB Impact Analysis]]
 
 ---
 
