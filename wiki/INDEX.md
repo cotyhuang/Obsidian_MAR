@@ -19,6 +19,25 @@ created: 2026-04-21
 
 ---
 
+## Standardised Approach (SA) — Sensitivities-Based Method
+
+- [[FRTB SA — Sensitivities-Based Method]] — General SBM framework: aggregation formulas, three correlation scenarios, sensitivity definitions.
+
+### Risk Classes
+- [[FRTB SA — GIRR]] — General Interest Rate Risk: risk-free yield curves, inflation, cross-currency basis.
+- [[FRTB SA — CSR Non-Securitisation]] — Credit Spread Risk for non-securitisation: 18 buckets by credit quality × sector.
+- [[FRTB SA — CSR Securitisation]] — CSR for securitisations (non-CTP): 25 buckets by seniority × asset class.
+- [[FRTB SA — CSR CTP]] — CSR for the Correlation Trading Portfolio: underlying-name sensitivities, higher risk weights.
+- [[FRTB SA — Equity Risk]] — Equity risk: 13 buckets by market cap × economy × sector.
+- [[FRTB SA — Commodity Risk]] — Commodity risk: 11 buckets by commodity group.
+- [[FRTB SA — FX Risk]] — Foreign exchange risk: specified currency pairs, worked example.
+
+### Other SA Components
+- [[FRTB SA — Default Risk Charge]] — DRC: jump-to-default risk, LGD, Hedge Benefit Ratio, risk weights by rating.
+- [[FRTB SA — Residual Risk Add-On]] — RRAO: exotic underlyings (1.0%) and other residual risks (0.1%).
+
+---
+
 ## Key Concepts
 
 - [[Trading Intent]] — Definition and regulatory criteria for positions held with trading intent.
@@ -30,6 +49,7 @@ created: 2026-04-21
 ## Comparisons & Analysis
 
 - [[Basel vs EBA — Boundary Comparison]] — Side-by-side comparison of how Basel RBC25 and EBA CRR define and manage the book boundary.
+- [[FRTB SA — Basel vs CRR3 Comparison]] — Basel IV vs EU CRR3 implementation: timeline, parameter, and structural differences for the SA.
 
 ---
 

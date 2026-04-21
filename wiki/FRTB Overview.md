@@ -33,8 +33,11 @@ Key motivations:
 - Separate treatment of **default risk** via the Default Risk Charge (DRC)
 
 ### 2.3 Standardised Approach (SA)
-- Completely redesigned, sensitivity-based method (**SbM**)
-- Risk sensitivities: delta, vega, and curvature across defined risk classes
+- Completely redesigned, sensitivity-based method (**SbM**) — see [[FRTB SA — Sensitivities-Based Method]]
+- Risk sensitivities: delta, vega, and curvature across seven defined risk classes:
+  - [[FRTB SA — GIRR|GIRR]], [[FRTB SA — CSR Non-Securitisation|CSR Non-Sec]], [[FRTB SA — CSR Securitisation|CSR Sec]], [[FRTB SA — CSR CTP|CSR CTP]], [[FRTB SA — Equity Risk|Equity]], [[FRTB SA — Commodity Risk|Commodity]], [[FRTB SA — FX Risk|FX]]
+- **Three correlation scenarios** (high/medium/low) — capital = max of three
+- Plus [[FRTB SA — Default Risk Charge|Default Risk Charge (DRC)]] and [[FRTB SA — Residual Risk Add-On|Residual Risk Add-On (RRAO)]]
 - Serves as both a **standalone capital calculation** and a **floor** for IMA banks
 
 ### 2.4 Internal Models Approach (IMA)
@@ -53,7 +56,7 @@ Key motivations:
 | UK | Post-Brexit separate implementation |
 
 > [!warning] EU Divergence
-> The EU's implementation through [[EBA CRR — Trading and Banking Book|CRR3]] includes deferrals and proportionality measures that depart from the Basel timeline. See [[Basel vs EBA — Boundary Comparison]] for details.
+> The EU's implementation through [[EBA CRR — Trading and Banking Book|CRR3]] includes deferrals and proportionality measures that depart from the Basel timeline. See [[Basel vs EBA — Boundary Comparison]] and [[FRTB SA — Basel vs CRR3 Comparison]] for details.
 
 ---
 
@@ -63,3 +66,7 @@ Key motivations:
 - [[Basel RBC25]]
 - [[EBA CRR — Trading and Banking Book]]
 - [[Trading Intent]]
+- [[FRTB SA — Sensitivities-Based Method]]
+- [[FRTB SA — Default Risk Charge]]
+- [[FRTB SA — Residual Risk Add-On]]
+- [[FRTB SA — Basel vs CRR3 Comparison]]
