@@ -19,11 +19,11 @@ created: 2026-04-21
 ### Delta Risk Factors ([[MAR_20260323.pdf#page=26|MAR21.8, page 26]])
 Three types of GIRR delta risk factors:
 
-| Risk Factor | Dimensions | Term Structure |
-|---|---|---|
-| **Risk-free yield curves** | Per currency × per curve (OIS, BOR, etc.) | 10 tenors: 0.25y, 0.5y, 1y, 2y, 3y, 5y, 10y, 15y, 20y, 30y |
-| **Inflation** | One flat curve per currency | No term structure |
-| **Cross-currency basis** | One of two bases per currency (Curr/USD or Curr/EUR) | No term structure (flat) |
+| Risk Factor                | Dimensions                                           | Term Structure                                             |
+| -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| **Risk-free yield curves** | Per currency × per curve (OIS, BOR, etc.)            | 10 tenors: 0.25y, 0.5y, 1y, 2y, 3y, 5y, 10y, 15y, 20y, 30y |
+| **Inflation**              | One flat curve per currency                          | No term structure                                          |
+| **Cross-currency basis**   | One of two bases per currency (Curr/USD or Curr/EUR) | No term structure (flat)                                   |
 
 > [!note] Curve Construction
 > - OIS and BOR swap curves are considered **two different curves** (MAR21.8(1)(c))
@@ -180,9 +180,9 @@ The bank uses a **single risk-free curve** (€STR OIS).
 
 #### Net Sensitivities (PV01, in EUR thousands)
 
-| Tenor | 2y | 5y | 10y |
-|---|---|---|---|
-| **s_k (PV01)** | +500 | −300 | +200 |
+| Tenor            | 2y   | 5y   | 10y  |
+| ---------------- | ---- | ---- | ---- |
+| **$s_k$ (PV01)** | +500 | −300 | +200 |
 
 _(All other tenors have zero sensitivity)_
 

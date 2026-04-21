@@ -27,13 +27,13 @@ created: 2026-04-21
 
 ## 2. Structural Differences
 
-| Aspect | Basel (MAR) | EU CRR3 |
-|---|---|---|
-| **SA Calculation frequency** | Monthly (MAR20.2) | Monthly (aligns with Basel) |
-| **Simplified SA** | Available at national discretion (MAR11.7, MAR40) | Available with specific proportionality thresholds |
-| **Correlation Trading Portfolio (CTP)** | Included from day one | Included, with technical standards by EBA |
-| **IMA desk-level approval** | Yes (MAR30.4) | Yes, with EBA RTS specifying criteria |
-| **SA as floor for IMA** | Yes | Yes with transitional adjustment factors |
+| Aspect                                  | Basel (MAR)                                       | EU CRR3                                            |
+| --------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
+| **SA Calculation frequency**            | Monthly (MAR20.2)                                 | Monthly (aligns with Basel)                        |
+| **Simplified SA**                       | Available at national discretion (MAR11.7, MAR40) | Available with specific proportionality thresholds |
+| **Correlation Trading Portfolio (CTP)** | Included from day one                             | Included, with technical standards by EBA          |
+| **IMA desk-level approval**             | Yes (MAR30.4)                                     | Yes, with EBA RTS specifying criteria              |
+| **SA as floor for IMA**                 | Yes                                               | Yes with transitional adjustment factors           |
 
 ---
 

@@ -132,9 +132,75 @@ The curvature risk weight = the **delta risk weight** for equity spot (relative 
 
 ---
 
+## 9. Worked Example — Equity Curvature
+
+> [!example] Two Equity Options — Bucket 8 (Large Cap, Advanced, Financials)
+
+### Setup
+
+A bank holds two options in bucket 8 (RW = 50%):
+
+| Position | Underlying | Current Price | Delta Sensitivity | Option MV |
+|---|---|---|---|---|
+| Call option (long) | Stock X | $100 | s_X = +$2,000,000 | $5.2M |
+| Put option (long) | Stock Y | $80 | s_Y = −$1,500,000 | $3.1M |
+
+Both stocks are in bucket 8 (large cap, advanced economy, financials). The intra-bucket correlation for different issuers in bucket 8 is ρ = 25%.
+
+### Step 1 — Apply Curvature Shocks ([[MAR_20260323.pdf#page=63|MAR21.98, page 63]])
+
+For equity, the curvature risk weight = delta risk weight = **50%** (relative shift).
+
+**Stock X** (shift ±50%):
+
+| Scenario | Shocked Price | Repriced MV | ΔMV | Delta Offset | CVR |
+|---|---|---|---|---|---|
+| Up (+50%) | $150 | $28.5M | +$23.3M | −RW × s_X = −0.50 × 2.0M = −$1.0M | −(23.3 − 1.0) = **−22.3M** |
+| Down (−50%) | $50 | $0.1M | −$5.1M | +RW × s_X = +0.50 × 2.0M = +$1.0M | −(−5.1 + 1.0) = **+4.1M** |
+
+**Stock Y** (shift ±50%):
+
+| Scenario | Shocked Price | Repriced MV | ΔMV | Delta Offset | CVR |
+|---|---|---|---|---|---|
+| Up (+50%) | $120 | $0.4M | −$2.7M | −RW × s_Y = −0.50 × (−1.5M) = +$0.75M | −(−2.7 + 0.75) = **+1.95M** |
+| Down (−50%) | $40 | $18.2M | +$15.1M | +RW × s_Y = +0.50 × (−1.5M) = −$0.75M | −(15.1 − 0.75) = **−14.35M** |
+
+> [!note] Formula reminder
+> $CVR_k^{+} = -\{V(x^{up}) - V(x) - RW \cdot s_k\}$ — see [[FRTB SA — Sensitivities-Based Method#Step 1 — Compute Curvature Risk Charges|SBM §6]]
+
+### Step 2 — Intra-Bucket Aggregation ([[MAR_20260323.pdf#page=24|MAR21.5(3), page 24]])
+
+**Upward scenario** ($CVR^+$):
+- $CVR_X^+ = -22.3$ (negative)
+- $CVR_Y^+ = +1.95$ (positive)
+- $\psi(CVR_X^+, CVR_Y^+) = 1$ (not both negative)
+
+$$K_b^{+} = \sqrt{\max\left(0,\; \max(-22.3, 0)^2 + \max(1.95, 0)^2 + 2 \times 0.25 \times (-22.3) \times 1.95 \times 1\right)}$$
+$$= \sqrt{\max\left(0,\; 0 + 3.80 + (-21.74)\right)} = \sqrt{\max(0,\; -17.94)} = \mathbf{0}$$
+
+**Downward scenario** ($CVR^-$):
+- $CVR_X^- = +4.1$ (positive)
+- $CVR_Y^- = -14.35$ (negative)
+- $\psi(CVR_X^-, CVR_Y^-) = 1$ (not both negative)
+
+$$K_b^{-} = \sqrt{\max\left(0,\; 4.1^2 + 0 + 2 \times 0.25 \times 4.1 \times (-14.35) \times 1\right)}$$
+$$= \sqrt{\max\left(0,\; 16.81 + (-29.44)\right)} = \sqrt{\max(0,\; -12.63)} = \mathbf{0}$$
+
+### Step 3 — Bucket Capital
+
+$$K_b = \max(K_b^+,\; K_b^-) = \max(0,\; 0) = \mathbf{0}$$
+
+> [!tip] Interpretation
+> Both scenarios produce **zero curvature capital** for this bucket. This happens because the long call (Stock X) and long put (Stock Y) are **natural hedges** — one gains under upward shocks while the other gains under downward shocks. The positive CVR from one offset the negative CVR from the other, and after the max(0,...) floor, the capital is zero.
+>
+> In practice, if both options were on the **same stock** (ρ = 99.9%), the netting would be even stronger. Conversely, if they were in **different buckets** (ρ → γ²), the hedge would be less effective.
+
+---
+
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]
 - [[FRTB SA — Commodity Risk]]
 - [[FRTB SA — FX Risk]]
 - [[FRTB SA — Default Risk Charge]]
+

@@ -111,4 +111,19 @@ When prompted for a health check:
 - **Accuracy over volume**: prefer concise, correct summaries over exhaustive reproduction.
 - **Preserve original language** for regulatory definitions and article references.
 - **Be explicit about uncertainty**: if a raw source is ambiguous, note it with `> [!warning]`.
-- **Use tags consistently**: `#MAR`, `#FRTB`, `#SbM`, `#RBC25`, `#EBA`, `#CRR`, `#BaselFramework`.
+---
+
+## 8. State Management & Persistence
+
+To ensure work continuity across sessions and quota refills, the agent must adhere to the following:
+
+1. **Mirror Artifacts**: The agent must always maintain a copy of the internal system artifacts in the workspace root:
+   - `implementation_plan.md` -> `PLAN.md`
+   - `task.md` -> `TASKS.md`
+2. **Auto-Resume Protocol**: At the start of every session or after a quota refill, the agent must read `TASKS.md` and `PLAN.md` to synchronize its state and identify pending items.
+3. **Execution Continuity**: If a task is interrupted, the agent will refer to `TASKS.md` to pick up exactly where it left off without requiring the user to re-explain the context.
+4. **Synchronization**: Any change to the internal `task.md` or `implementation_plan.md` must be mirrored to the workspace files immediately before ending a turn.
+5. **Task Archiving**: When a task is confirmed as "Complete" or "Finalized" by the user:
+   - Mirror the final state to `outputs/`.
+   - Name the archived files using the format: `outputs/YYYY-MM-DD — <Task Name> — PLAN/TASKS.md`.
+   - Delete the root `PLAN.md` and `TASKS.md` to clear the workspace for new missions.

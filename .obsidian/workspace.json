@@ -20,23 +20,19 @@
               "icon": "lucide-file",
               "title": "FRTB SA — GIRR"
             }
-          }
-        ]
-      },
-      {
-        "id": "c12fe7b9d53ac91c",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "bf37c6377ed56fa3",
+            "id": "1df98fe723a617a7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "raw/MAR_20260323.pdf"
+                "file": "wiki/Basel RBC25.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MAR_20260323"
+              "icon": "lucide-file",
+              "title": "Basel RBC25"
             }
           }
         ]
@@ -112,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/MAR_20260323.pdf",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for MAR_20260323"
+              "title": "Backlinks for FRTB SA — GIRR"
             }
           },
           {
@@ -131,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raw/MAR_20260323.pdf",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from MAR_20260323"
+              "title": "Outgoing links from FRTB SA — GIRR"
             }
           },
           {
@@ -174,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/MAR_20260323.pdf",
+                "file": "wiki/FRTB SA — GIRR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MAR_20260323"
+              "title": "Outline of FRTB SA — GIRR"
             }
           }
         ]
@@ -201,30 +197,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "bf37c6377ed56fa3",
+  "active": "5969bbdff6185f4c",
   "lastOpenFiles": [
+    "outputs/2026-04-21 — Persistence Setup — TASKS.md",
+    "outputs/2026-04-21 — Persistence Setup — PLAN.md",
+    "wiki/Git Status Icons in VSCode.md",
+    "TASKS.md",
+    "PLAN.md",
+    "wiki/FRTB SA — Commodity Risk.md",
+    "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
+    "wiki/FRTB SA — CSR CTP.md",
+    "wiki/FRTB SA — CSR Non-Securitisation.md",
+    "wiki/FRTB Overview.md",
+    "wiki/FRTB SA — Residual Risk Add-On.md",
+    "outputs/2026-04-21 — Health Check.md",
+    "wiki/Basel RBC25.md",
     "wiki/FRTB SA — GIRR.md",
     "raw/MAR_20260323.pdf",
-    "wiki/FRTB SA — Commodity Risk.md",
+    "wiki/Banking Book vs Trading Book.md",
     "wiki/EBA CRR — Trading and Banking Book.md",
     "wiki/Basel vs EBA — Boundary Comparison.md",
     "wiki/FRTB SA — Sensitivities-Based Method.md",
-    "wiki/FRTB Overview.md",
-    "wiki/FRTB SA — CSR Non-Securitisation.md",
-    "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
-    "wiki/FRTB SA — Residual Risk Add-On.md",
     "wiki/INDEX.md",
     "wiki/FRTB SA — CSR Securitisation.md",
-    "wiki/FRTB SA — CSR CTP.md",
-    "wiki/Basel RBC25.md",
     "wiki/FRTB SA — Default Risk Charge.md",
     "wiki/Untitled.md",
-    "wiki/Banking Book vs Trading Book.md",
     "wiki/Internal Risk Transfers.md",
     "wiki/test PDF link.md",
     "raw/test PDF link.md",
-    "raw/MAR_20260323_extracted.md",
-    "wiki/FRTB SA — Equity Risk.md",
-    "[[Second Brain]] 建立指南：無 CLI 版本.md"
+    "raw/MAR_20260323_extracted.md"
   ]
 }

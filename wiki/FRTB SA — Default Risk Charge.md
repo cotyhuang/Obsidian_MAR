@@ -158,9 +158,95 @@ Claims on sovereigns, PSEs and MDBs may at **national discretion** carry a **zer
 
 ---
 
+## 10. Worked Example — Non-Sec DRC
+
+> [!example] Corporate Bond & CDS Portfolio
+
+### Setup
+
+A bank holds 5 credit exposures, all in the **Corporate bucket**:
+
+| # | Instrument | Obligor | Rating | Seniority | Notional | Market Value | Maturity |
+|---|---|---|---|---|---|---|---|
+| 1 | Bond (long) | Firm A | BBB | Senior | +100M | 95M | 3y |
+| 2 | CDS (short) | Firm A | BBB | Senior | −80M | −82M | 5y |
+| 3 | Bond (long) | Firm B | BB | Senior | +50M | 48M | 2y |
+| 4 | Equity (long) | Firm C | A | Equity | +30M | 30M | >1y |
+| 5 | CDS (short) | Firm D | BBB | Senior | −40M | −38M | 6m |
+
+---
+
+### Step 1 — Gross JTD ([[MAR_20260323.pdf#page=68|MAR22.11, page 68]])
+
+$$\text{JTD} = \text{LGD} \times \text{Notional} + \text{P\&L}$$
+
+| # | LGD | LGD × Notional | P&L (MV − Notional) | JTD (raw) | Long/Short? |
+|---|---|---|---|---|---|
+| 1 | 75% (senior) | +75M | 95 − 100 = −5M | +70M | Long (max with 0) |
+| 2 | 75% (senior) | −60M | −82 − (−80) = −2M | −62M | Short (min with 0) |
+| 3 | 75% (senior) | +37.5M | 48 − 50 = −2M | +35.5M | Long |
+| 4 | 100% (equity) | +30M | 30 − 30 = 0 | +30M | Long |
+| 5 | 75% (senior) | −30M | −38 − (−40) = +2M | −28M | Short |
+
+### Step 2 — Maturity Scaling ([[MAR_20260323.pdf#page=69|MAR22.15, page 69]])
+
+Exposures < 1 year: scale by max(maturity, 3 months) / 1 year.
+
+| # | Maturity | Scale Factor | Scaled JTD |
+|---|---|---|---|
+| 1 | 3y (≥ 1y) | 1.0 | +70.0M |
+| 2 | 5y (≥ 1y) | 1.0 | −62.0M |
+| 3 | 2y (≥ 1y) | 1.0 | +35.5M |
+| 4 | >1y | 1.0 | +30.0M |
+| 5 | 6m (< 1y) | 0.5 | **−14.0M** |
+
+### Step 3 — Net JTD by Obligor ([[MAR_20260323.pdf#page=72|MAR22.19, page 72]])
+
+Offset long/short positions to the **same obligor** (same or lower seniority):
+
+| Obligor | Long JTD | Short JTD | Offset? | Net JTD |
+|---|---|---|---|---|
+| **Firm A** | +70.0M (bond, senior) | −62.0M (CDS, senior) | ✅ Same seniority | **+8.0M** (net long) |
+| **Firm B** | +35.5M | — | No short | **+35.5M** (net long) |
+| **Firm C** | +30.0M | — | No short | **+30.0M** (net long) |
+| **Firm D** | — | −14.0M | No long | **−14.0M** (net short) |
+
+### Step 4 — Hedge Benefit Ratio ([[MAR_20260323.pdf#page=73|MAR22.23, page 73]])
+
+$$\text{HBR} = \frac{\sum \text{Net Long JTD}}{\sum \text{Net Long JTD} + \sum |\text{Net Short JTD}|}$$
+
+$$\text{HBR} = \frac{8.0 + 35.5 + 30.0}{(8.0 + 35.5 + 30.0) + 14.0} = \frac{73.5}{87.5} = \mathbf{0.840}$$
+
+### Step 5 — Risk-Weighted & Bucket DRC ([[MAR_20260323.pdf#page=74|MAR22.25, page 74]])
+
+| Obligor | Net JTD | Rating | RW | RW × Net JTD |
+|---|---|---|---|---|
+| Firm A | +8.0M | BBB | 6% | +0.48M |
+| Firm B | +35.5M | BB | 15% | +5.325M |
+| Firm C | +30.0M | A | 3% | +0.90M |
+| Firm D | −14.0M | BBB | 6% | 0.84M (absolute) |
+
+$$\text{DRC}_{corp} = \max\left[\underbrace{(0.48 + 5.325 + 0.90)}_{\text{Weighted long}} - \underbrace{0.840 \times 0.84}_{\text{HBR} \times \text{weighted short}},\; 0\right]$$
+
+$$\text{DRC}_{corp} = \max\left[6.705 - 0.706,\; 0\right] = \mathbf{5.999M}$$
+
+### Step 6 — Total Non-Sec DRC
+
+If the bank has no sovereign or local government bucket exposures:
+
+$$\text{DRC}_{non\text{-}sec} = \text{DRC}_{corp} + \text{DRC}_{sov} + \text{DRC}_{local} = 5.999 + 0 + 0 = \mathbf{5.999M}$$
+
+> [!tip] Key Observations
+> 1. **Firm A offset**: The CDS short (−62M) largely offset the bond long (+70M), reducing Firm A's net JTD from 70M to just 8M — a **significant hedge benefit** from having both legs on the same obligor.
+> 2. **HBR < 1**: The Firm D short (−14M) gets only 84% recognition as a hedge against different obligors. If the portfolio were 100% long, HBR would be 1.0 (no shorts).
+> 3. **Simple sum across buckets**: No diversification across corporate/sovereign/local government buckets.
+
+---
+
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]
 - [[FRTB SA — Residual Risk Add-On]]
 - [[FRTB SA — CSR Non-Securitisation]]
 - [[FRTB Overview]]
+
