@@ -13,15 +13,15 @@ created: 2026-04-21
 
 ## 1. Why It Matters
 
-Banks often wish to transfer risk internally — for example, a credit desk in the [[Banking Book vs Trading Book|trading book]] might hedge a loan portfolio in the banking book. Without strict controls, banks could:
+Banks often wish to transfer risk internally — for example, a credit desk in the [[Trading Book vs Banking Book Boundary]] might hedge a loan portfolio in the banking book. Without strict controls, banks could:
 
 - Reduce capital by routing positions through the more favourable book
 - Obscure the true risk profile of each book
-- Undermine the [[Basel RBC25|boundary rules]]
+- Undermine the [[Trading Book vs Banking Book Boundary]]
 
 ## 2. Basel Approach
 
-Under [[Basel RBC25]]:
+Under [[Trading Book vs Banking Book Boundary]]:
 
 - IRTs are subject to **strict supervisory controls**
 - The trading book leg must be hedged with an **external third party** for the capital benefit to be recognised
@@ -30,7 +30,7 @@ Under [[Basel RBC25]]:
 
 ## 3. EBA CRR Approach
 
-Under [[EBA CRR — Trading and Banking Book|CRR Article 104b]]:
+Under [[Trading Book vs Banking Book Boundary]]:
 
 - More **flexibility** is afforded to EU banks for managing book boundaries
 - IRTs are recognised without mandatory external hedging in some cases
@@ -50,7 +50,7 @@ Under [[EBA CRR — Trading and Banking Book|CRR Article 104b]]:
 
 ## See Also
 
-- [[Banking Book vs Trading Book]]
-- [[Basel RBC25]]
-- [[EBA CRR — Trading and Banking Book]]
-- [[Basel vs EBA — Boundary Comparison]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]

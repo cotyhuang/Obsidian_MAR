@@ -13,7 +13,7 @@ created: 2026-04-21
 
 ## 1. Basel Treatment (RBC 25.5)
 
-Under [[Basel RBC25]], structural FX positions may be **excluded** from market risk capital charges if:
+Under [[Trading Book vs Banking Book Boundary]], structural FX positions may be **excluded** from market risk capital charges if:
 
 - They are deliberately held to **hedge the bank's capital adequacy ratio** against FX movements
 - They are of a **lasting structural nature** (e.g., capital invested in a foreign subsidiary)
@@ -24,7 +24,7 @@ Under [[Basel RBC25]], structural FX positions may be **excluded** from market r
 
 ## 2. CRR Treatment (Article 104b(4))
 
-Under [[EBA CRR — Trading and Banking Book|CRR]], the treatment is similar but adds:
+Under [[Trading Book vs Banking Book Boundary]], the treatment is similar but adds:
 
 - Structural FX positions are tied to **trading desk definitions** under Article 104b(4)
 - More prescriptive governance requirements around identification and documentation
@@ -42,6 +42,6 @@ A UK-headquartered bank with a EUR-denominated subsidiary might hold a EUR/GBP p
 
 ## See Also
 
-- [[Basel RBC25]]
-- [[EBA CRR — Trading and Banking Book]]
-- [[Banking Book vs Trading Book]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]

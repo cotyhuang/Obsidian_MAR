@@ -7,13 +7,13 @@ created: 2026-04-21
 # Trading Intent
 
 > [!note] Definition
-> **Trading intent** is the regulatory criterion that determines whether a financial position belongs in the [[Banking Book vs Trading Book|trading book]]. A position is held with trading intent if it is acquired for short-term resale, to benefit from price movements, or to hedge other trading positions.
+> **Trading intent** is the regulatory criterion that determines whether a financial position belongs in the [[Trading Book vs Banking Book Boundary]]. A position is held with trading intent if it is acquired for short-term resale, to benefit from price movements, or to hedge other trading positions.
 
 ---
 
 ## 1. Basel Definition (RBC25)
 
-Under [[Basel RBC25]], trading intent includes positions that are:
+Under [[Trading Book vs Banking Book Boundary]], trading intent includes positions that are:
 
 1. Held for **short-term resale**
 2. Intended to benefit from **actual or expected short-term price differences**
@@ -22,7 +22,7 @@ Under [[Basel RBC25]], trading intent includes positions that are:
 
 ## 2. CRR Definition (Article 4(1)(85))
 
-The [[EBA CRR — Trading and Banking Book|CRR]] defines "positions held with trading intent" as:
+The [[Trading Book vs Banking Book Boundary]] defines "positions held with trading intent" as:
 
 > **(a)** proprietary positions and positions arising from **client servicing and market making**
 > **(b)** positions intended to be **resold short term**
@@ -42,6 +42,6 @@ The [[EBA CRR — Trading and Banking Book|CRR]] defines "positions held with tr
 
 ## See Also
 
-- [[Banking Book vs Trading Book]]
-- [[Basel RBC25]]
-- [[EBA CRR — Trading and Banking Book]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]

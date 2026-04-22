@@ -18,12 +18,12 @@ The **Fundamental Review of the Trading Book** is a set of reforms that overhaul
 
 Key motivations:
 - The 2008 financial crisis revealed that the existing market risk framework was **insufficiently capitalised**
-- Boundary between [[Banking Book vs Trading Book|banking and trading books]] was too porous
+- Boundary between [[Trading Book vs Banking Book Boundary]] was too porous
 - Risk measures (Value-at-Risk) were deemed inadequate
 
 ## 2. Major Changes
 
-### 2.1 Revised Boundary ([[Basel RBC25]])
+### 2.1 Revised Boundary ([[Trading Book vs Banking Book Boundary]])
 - Stricter rules for assigning positions to the trading book
 - Tighter controls on reclassification
 - Mandatory [[Trading Intent]] documentation
@@ -59,15 +59,15 @@ Key motivations:
 | UK | Post-Brexit separate implementation |
 
 > [!warning] EU Divergence
-> The EU's implementation through [[EBA CRR — Trading and Banking Book|CRR3]] includes deferrals and proportionality measures that depart from the Basel timeline. See [[Basel vs EBA — Boundary Comparison]] and [[FRTB SA — Basel vs CRR3 Comparison]] for details.
+> The EU's implementation through [[Trading Book vs Banking Book Boundary]] includes deferrals and proportionality measures that depart from the Basel timeline. See [[Trading Book vs Banking Book Boundary]] and [[FRTB SA — Basel vs CRR3 Comparison]] for details.
 
 ---
 
 ## See Also
 
-- [[Banking Book vs Trading Book]]
-- [[Basel RBC25]]
-- [[EBA CRR — Trading and Banking Book]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
+- [[Trading Book vs Banking Book Boundary]]
 - [[Trading Intent]]
 - [[FRTB SA — Sensitivities-Based Method]]
 - [[FRTB SA — Default Risk Charge]]

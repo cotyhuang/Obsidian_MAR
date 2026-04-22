@@ -12,9 +12,9 @@ created: 2026-04-21
 
 ## Regulatory Frameworks
 
-- [[Banking Book vs Trading Book]] — Core definitions, boundary rules, and the distinction between positions held for trading intent vs long-term holding.
-- [[Basel RBC25]] — Basel Committee framework chapter defining the boundary between the banking book and the trading book.
-- [[EBA CRR — Trading and Banking Book]] — EU implementation of the boundary rules via CRR Articles 104, 104a, and 104b.
+- [[Trading Book vs Banking Book Boundary]] — Core definitions, boundary rules, and the distinction between positions held for trading intent vs long-term holding.
+- [[Trading Book vs Banking Book Boundary]] — Basel Committee framework chapter defining the boundary between the banking book and the trading book.
+- [[Trading Book vs Banking Book Boundary]] — EU implementation of the boundary rules via CRR Articles 104, 104a, and 104b.
 - [[FRTB Overview]] — The Fundamental Review of the Trading Book and its impact on market risk capital requirements.
 
 ---
@@ -48,7 +48,7 @@ created: 2026-04-21
 
 ## Comparisons & Analysis
 
-- [[Basel vs EBA — Boundary Comparison]] — Side-by-side comparison of how Basel RBC25 and EBA CRR define and manage the book boundary.
+- [[Trading Book vs Banking Book Boundary]] — Side-by-side comparison of how Basel RBC25 and EBA CRR define and manage the book boundary.
 - [[FRTB SA — Basel vs CRR3 Comparison]] — Basel IV vs EU CRR3 implementation: timeline, parameter, and structural differences for the SA.
 
 ---
