@@ -89,8 +89,51 @@ The instruments subject to RRAO **do not change** the scope of risk factors in t
 
 ---
 
-## See Also
-
-- [[FRTB SA — Sensitivities-Based Method]]
-- [[FRTB SA — Default Risk Charge]]
-- [[FRTB Overview]]
+## 7. Worked Example — RRAO
+227: 
+228: > [!example] Exotic and Path-Dependent Portfolio
+229: 
+230: ### Setup
+231: 
+232: A bank holds three instruments subject to RRAO:
+233: 
+234: | # | Instrument | Risk Category | Notional |
+235: |---|---|---|---|
+236: | 1 | **Barrier Option** (S&P 500) | Other Residual (Gap Risk) | $100M |
+237: | 2 | **Weather Derivative** (HDD) | Exotic Underlying | $20M |
+238: | 3 | **Quanto Option** (Nikkei in USD) | Other Residual (Correlation) | $50M |
+239: 
+240: ---
+241: 
+242: ### Step 1 — Classification & Risk Weights
+243: 
+244: - **Barrier Option**: Falls under MAR23.4 (Other Residual Risks) due to non-linear payoff/gap risk. **RW = 0.1%**.
+245: - **Weather Derivative**: Falls under MAR23.3 (Exotic Underlying) as weather is not a standard SBM risk factor. **RW = 1.0%**.
+246: - **Quanto Option**: Falls under MAR23.4 (Other Residual Risks) due to correlation risk between FX and equity. **RW = 0.1%**.
+247: 
+248: ---
+249: 
+250: ### Step 2 — Calculation
+251: 
+252: $$\text{RRAO} = \sum (\text{Notional} \times \text{RW})$$
+253: 
+254: | Instrument | Notional | RW | Add-On |
+255: |---|---|---|---|
+256: | Barrier Option | $100M | 0.1% | $100,000 |
+257: | Weather Derivative | $20M | 1.0% | $200,000 |
+258: | Quanto Option | $50M | 0.1% | $50,000 |
+259: | **Total RRAO** | | | **$350,000** |
+260: 
+261: > [!tip] Key Observations
+262: > 1. **No Netting**: Even if the bank held a short barrier option on the same underlying, the gross notionals of both would be added.
+263: > 2. **Additive**: This $350k charge is added to the Delta, Vega, Curvature, and DRC charges.
+264: > 3. **Exotic Penalty**: The weather derivative, despite having the smallest notional, contributes the most to the charge due to the 10x higher risk weight for exotic underlyings.
+265: 
+266: ---
+267: 
+268: ## See Also
+269: 
+270: - [[FRTB SA — Sensitivities-Based Method]]
+271: - [[FRTB SA — Default Risk Charge]]
+272: - [[FRTB Overview]]
+273: 

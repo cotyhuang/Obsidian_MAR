@@ -27,6 +27,7 @@ Three types of GIRR delta risk factors:
 | **Risk-free yield curves** | Per currency × per curve (OIS, BOR, etc.)            | 10 tenors: 0.25y, 0.5y, 1y, 2y, 3y, 5y, 10y, 15y, 20y, 30y |
 | **Inflation**              | One flat curve per currency                          | No term structure                                          |
 | **Cross-currency basis**   | One of two bases per currency (Curr/USD or Curr/EUR) | No term structure (flat)                                   |
+|                            |                                                      |                                                            |
 
 > [!note] Curve Construction
 > - OIS and BOR swap curves are considered **two different curves** (MAR21.8(1)(c))

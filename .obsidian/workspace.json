@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/MAR_20260323.md",
+                "file": "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAR_20260323"
+              "title": "FRTB_SA_Risk-Data-Standards_v1.9"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5086555480957
+    "width": 604.5110359191895
   },
   "right": {
     "id": "5212d204388528ae",
@@ -180,21 +180,32 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "05957074ae84fa01",
   "lastOpenFiles": [
+    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
+    "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
+    "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
+    "raw/Banking book Trading book comparison.md",
+    "wiki/FRTB SA — GIRR.md",
+    "wiki/FRTB SA — CSR CTP.md",
+    "wiki/Basel vs EBA — Boundary Comparison.md",
+    "wiki/Basel RBC25.md",
+    "raw/MAR_20260323.pdf",
+    "Untitled.base",
+    "raw/MAR_20260323.md",
     "raw/CRR_20260101.md",
     "raw/CRR_20260101.pdf",
-    "raw/MAR_20260323.md",
-    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
     "wiki/Banking Book vs Trading Book.md",
     "raw/d457_FRTB_2019.pdf",
     "raw/RBC25.pdf",
     "raw/RBC25.pdf.crdownload",
     "raw/RBC25_Boundary.pdf",
-    "wiki/Basel vs EBA — Boundary Comparison.md",
     "wiki/FRTB SA — Commodity Risk.md",
     "wiki/FRTB SA — FX Risk.md",
     "wiki/Internal Risk Transfers.md",
@@ -202,22 +213,15 @@
     "[[Second Brain]] 建立指南：無 CLI 版本.md",
     "wiki/FRTB SA — Residual Risk Add-On.md",
     "raw/CRR_20260101_extracted.md",
-    "wiki/FRTB SA — CSR CTP.md",
-    "wiki/FRTB SA — GIRR.md",
     "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
     "raw/MAR_20260323_extracted.md",
     "raw/crr_structure.txt",
-    "raw/Banking book Trading book comparison.md",
     "outputs/2026-04-21 — Health Check.md",
     "Basel Committee on Banking Supervision.md",
     "raw/test PDF link.md",
     "raw/CRR_20260101.pdf.crdownload",
     "raw/CRR3 Market Risk Summary.md",
-    "raw/MAR_20260323.pdf",
     "raw/FRTB Impact Analysis.md",
-    "wiki/Basel RBC25.md",
-    "wiki/FRTB SA — Sensitivities-Based Method.md",
-    "outputs/2026-04-21 — Persistence Setup — PLAN.md",
-    "outputs/2026-04-21 — Persistence Setup — TASKS.md"
+    "wiki/FRTB SA — Sensitivities-Based Method.md"
   ]
 }

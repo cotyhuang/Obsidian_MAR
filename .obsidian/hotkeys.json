@@ -1,0 +1,18 @@
+{
+  "pdf-plus:zoom-in": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
+    }
+  ],
+  "pdf-plus:zoom-out": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ]
+}
