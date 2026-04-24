@@ -43,13 +43,16 @@ This vault focuses on **Market Risk (MAR)** and related prudential banking regul
 ## 3. Wiki Formatting Rules
 
 ### 3.1 INDEX.md
+
 - `wiki/INDEX.md` is the **master table-of-contents** for the entire wiki.
 - It must list every wiki page with a `[[wikilink]]` and a one-line description.
 - Group entries by thematic section.
 
 ### 3.2 Individual Wiki Pages
+
 - **Filename**: use the topic name in plain English, e.g. `Banking Book vs Trading Book.md`.
 - **Frontmatter** (YAML):
+
   ```yaml
   ---
   tags: [<relevant tags>]
@@ -58,6 +61,7 @@ This vault focuses on **Market Risk (MAR)** and related prudential banking regul
   created: YYYY-MM-DD
   ---
   ```
+
 - **Wikilinks**: use `[[Topic Name]]` to create bidirectional links between related concepts.
 - **Source attribution**: every factual claim should reference its `raw/` source via `[[raw/filename]]`.
 - **Heading structure**: use a single `# H1` title, then `## H2` sections. Keep headings concise.
@@ -65,6 +69,7 @@ This vault focuses on **Market Risk (MAR)** and related prudential banking regul
 - **Callouts**: use Obsidian callout syntax (`> [!note]`, `> [!warning]`, etc.) for important distinctions.
 
 ### 3.3 Linking Convention
+
 - Always check existing wiki pages before creating a new one — avoid duplicates.
 - When a concept is mentioned that has its own wiki page, wrap it in `[[double brackets]]`.
 - Maintain a `## See Also` section at the bottom of each page listing related wiki pages.
@@ -75,12 +80,13 @@ This vault focuses on **Market Risk (MAR)** and related prudential banking regul
 
 When prompted to compile or update the wiki:
 
-1. **Read** all files in `raw/`.
-2. **Identify** distinct topics and key concepts.
-3. **Create or update** `wiki/INDEX.md` first.
-4. **Create one `.md` page per major topic** in `wiki/`, following the formatting rules above.
-5. **Interlink** related pages using `[[wikilinks]]`.
-6. **Summarise** each raw source, preserving factual accuracy and regulatory references.
+1. **Token Optimization (Read `.md` first)**: When processing files in `raw/`, if a source exists as both a `.md` (text extraction) and a `.pdf` with the same filename, **always read the `.md` file first**.
+2. **Conditional PDF Parsing**: Only read the corresponding `.pdf` file if the `.md` lacks sufficient detail, if you need to verify a specific regulatory table/formula (e.g., IMA calculations), or if the user explicitly asks for details not found in the text.
+3. **Identify** distinct topics and key concepts from the read materials.
+4. **Create or update** `wiki/INDEX.md` first.
+5. **Create one `.md` page per major topic** in `wiki/`, following the formatting rules above.
+6. **Interlink** related pages using `[[wikilinks]]`.
+7. **Summarise** each raw source, preserving factual accuracy and regulatory references.
 
 ---
 
@@ -111,6 +117,8 @@ When prompted for a health check:
 - **Accuracy over volume**: prefer concise, correct summaries over exhaustive reproduction.
 - **Preserve original language** for regulatory definitions and article references.
 - **Be explicit about uncertainty**: if a raw source is ambiguous, note it with `> [!warning]`.
+- **Token Efficiency (MD over PDF)**: To conserve context window, always prioritize reading `.md` files over `.pdf` files. If `raw/Basel_FRTB.md` and `raw/Basel_FRTB.pdf` both exist, read the `.md` first. Only parse the PDF if deep regulatory specifics are missing from the markdown version.
+
 ---
 
 ## 8. State Management & Persistence
