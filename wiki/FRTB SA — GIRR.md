@@ -263,10 +263,10 @@ $$\text{GIRR Delta Capital} = \max(3{,}758,\; 3{,}818,\; 4{,}224) = \mathbf{4{,}
 
 A EUR-reporting bank holds two EUR swaptions on the same risk-free curve (€STR OIS). GIRR vega risk weight = **100%** (LH = 60 days, [[MAR_20260323.pdf#page=60|MAR21.92, page 60]]).
 
-| # | Instrument | Option Maturity ($T$) | Underlying Tenor ($T^U$) | Vega (∂V/∂σ) | σ_implied | Vega Sensitivity |
-|---|---|---|---|---|---|---|
-| 1 | Payer swaption | 1y | 5y | +120,000 | 45% (0.45) | +54,000 |
-| 2 | Receiver swaption | 3y | 5y | −80,000 | 52% (0.52) | −41,600 |
+| #   | Instrument        | Option Maturity ($T$) | Underlying Tenor ($T^U$) | Vega (∂V/∂σ) | σ_implied  | Vega Sensitivity |
+| --- | ----------------- | --------------------- | ------------------------ | ------------ | ---------- | ---------------- |
+| 1   | Payer swaption    | 1y                    | 5y                       | +120,000     | 45% (0.45) | +54,000          |
+| 2   | Receiver swaption | 3y                    | 5y                       | −80,000      | 52% (0.52) | −41,600          |
 
 **Vega sensitivity** ([[MAR_20260323.pdf#page=34|MAR21.25, page 34]]):
 $$s_k = \text{vega}_k \times \sigma_{k,\text{implied}}$$

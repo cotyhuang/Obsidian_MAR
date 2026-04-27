@@ -11,14 +11,16 @@
             "id": "05957074ae84fa01",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "wiki/FRTB SA — FX Risk.md",
-                "mode": "source",
-                "source": false
+                "file": "raw/MAR_20260323.pdf",
+                "page": 7,
+                "left": -9,
+                "top": 443,
+                "zoom": 1.8394705012767103
               },
-              "icon": "lucide-file",
-              "title": "FRTB SA — FX Risk"
+              "icon": "lucide-file-text",
+              "title": "MAR_20260323"
             }
           }
         ]
@@ -188,6 +190,12 @@
   },
   "active": "05957074ae84fa01",
   "lastOpenFiles": [
+    "wiki/FRTB SA — Sensitivities-Based Method.md",
+    "wiki/FRTB SA — Residual Risk Add-On.md",
+    "wiki/Git Status Icons in VSCode.md",
+    "wiki/FRTB SA — Equity Risk.md",
+    "wiki/FRTB SA — GIRR.md",
+    "wiki/FRTB SA — FX Risk.md",
     "wiki/CRR3 Article Map.md",
     "wiki/ISDA CRIF — FRTB-SA Data Standards.md",
     "TASKS.md",
@@ -197,7 +205,6 @@
     "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
     "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
     "raw/Banking book Trading book comparison.md",
-    "wiki/FRTB SA — GIRR.md",
     "wiki/FRTB SA — CSR CTP.md",
     "wiki/Basel vs EBA — Boundary Comparison.md",
     "wiki/Basel RBC25.md",
@@ -212,17 +219,12 @@
     "raw/RBC25.pdf.crdownload",
     "raw/RBC25_Boundary.pdf",
     "wiki/FRTB SA — Commodity Risk.md",
-    "wiki/FRTB SA — FX Risk.md",
     "wiki/Internal Risk Transfers.md",
     "wiki/Trading Intent.md",
     "[[Second Brain]] 建立指南：無 CLI 版本.md",
-    "wiki/FRTB SA — Residual Risk Add-On.md",
     "raw/CRR_20260101_extracted.md",
     "wiki/FRTB SA — Basel vs CRR3 Comparison.md",
-    "raw/MAR_20260323_extracted.md",
     "raw/crr_structure.txt",
-    "outputs/2026-04-21 — Health Check.md",
-    "Basel Committee on Banking Supervision.md",
     "raw/CRR_20260101.pdf.crdownload"
   ]
 }
