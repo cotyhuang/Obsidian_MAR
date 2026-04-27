@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
+                "file": "wiki/FRTB SA — FX Risk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FRTB_SA_Risk-Data-Standards_v1.9"
+              "title": "FRTB SA — FX Risk"
             }
           }
         ]
@@ -188,9 +188,13 @@
   },
   "active": "05957074ae84fa01",
   "lastOpenFiles": [
+    "wiki/CRR3 Article Map.md",
+    "wiki/ISDA CRIF — FRTB-SA Data Standards.md",
+    "TASKS.md",
+    "PLAN.md",
+    "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.pdf",
     "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
-    "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
     "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
     "raw/Banking book Trading book comparison.md",
     "wiki/FRTB SA — GIRR.md",
@@ -219,9 +223,6 @@
     "raw/crr_structure.txt",
     "outputs/2026-04-21 — Health Check.md",
     "Basel Committee on Banking Supervision.md",
-    "raw/test PDF link.md",
-    "raw/CRR_20260101.pdf.crdownload",
-    "raw/CRR3 Market Risk Summary.md",
-    "raw/FRTB Impact Analysis.md"
+    "raw/CRR_20260101.pdf.crdownload"
   ]
 }

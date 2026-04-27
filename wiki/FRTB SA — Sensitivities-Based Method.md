@@ -183,7 +183,51 @@ $$RW_k = \min\left(RW_\sigma \cdot \frac{\sqrt{LH_{risk\_class}}}{\sqrt{10}},\; 
 
 ---
 
-## 10. Curvature Risk Weights ([[MAR_20260323.pdf#page=63|MAR21.98–21.99, page 63]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
+## 10. Worked Example — FX Vega Capital
+
+> [!example] EUR/USD 6-month option — USD-reporting bank
+
+**Setup**: A bank holds a EUR/USD call option with 6-month maturity. Compute the vega capital charge.
+
+**Step 1 — Identify risk factors**: FX Vega has a single dimension — option maturity. The option maps to the **0.5y** tenor point.
+
+**Step 2 — Compute vega sensitivity** ([[MAR_20260323.pdf#page=32|MAR21.25, page 32]]):
+$$s_k = \text{vega} \times \sigma_k$$
+
+Assume:
+- Vega (option greek) = 250,000 USD per 1% vol move
+- Implied volatility $\sigma_k$ = 12% (0.12)
+
+$$s_k = 250{,}000 \times 0.12 = 30{,}000$$
+
+**Step 3 — Apply vega risk weight** (from §9 above):
+FX vega risk weight = 100% (LH = 40 days, capped at 100%).
+
+$$WS_k = s_k \times RW_k = 30{,}000 \times 100\% = 30{,}000$$
+
+**Step 4 — Intra-bucket aggregation**: Each FX pair is its own bucket with one vega risk factor (at this tenor). If the bank has only one EUR/USD option:
+
+$$K_{EUR} = |WS_k| = 30{,}000$$
+
+If the bank has a second option (e.g. 1y maturity with $WS_{1y} = -15{,}000$), the intra-bucket correlation ρ between the 0.5y and 1y tenor points comes from MAR21.93:
+
+$$\rho = \min\left(e^{-\alpha \cdot \frac{|T_k - T_l|}{\min(T_k, T_l)}},\; 1\right) \quad \alpha = 0.01$$
+
+$$\rho = e^{-0.01 \times \frac{|0.5 - 1.0|}{0.5}} = e^{-0.01} \approx 0.99$$
+
+$$K_{EUR} = \sqrt{30{,}000^2 + (-15{,}000)^2 + 2 \times 0.99 \times 30{,}000 \times (-15{,}000)}$$
+$$= \sqrt{900{,}000{,}000 + 225{,}000{,}000 - 891{,}000{,}000} = \sqrt{234{,}000{,}000} \approx 15{,}297$$
+
+**Step 5 — Cross-bucket aggregation**: With only EUR exposure:
+$$\text{FX Vega Capital} = K_{EUR} = 15{,}297$$
+
+**Step 6 — Three scenarios**: Repeat with ρ scaled by ×1.25 (high) and ×0.75 (low). Take the max.
+
+> [!note] This example uses the FX risk class. The same aggregation logic applies to all seven risk classes — only the risk weights and correlations differ.
+
+---
+
+## 11. Curvature Risk Weights ([[MAR_20260323.pdf#page=63|MAR21.98–21.99, page 63]] / [[CRR_20260101.pdf#page=477|CRR Art. 325g]])
 
 | Risk Class | Curvature Risk Weight |
 |---|---|
@@ -195,7 +239,7 @@ $$RW_k = \min\left(RW_\sigma \cdot \frac{\sqrt{LH_{risk\_class}}}{\sqrt{10}},\; 
 
 ---
 
-## 11. Treatment of Index Instruments ([[MAR_20260323.pdf#page=36|MAR21.31–21.34, page 36]] / [[CRR_20260101.pdf#page=480|CRR Art. 325i]])
+## 12. Treatment of Index Instruments ([[MAR_20260323.pdf#page=36|MAR21.31–21.34, page 36]] / [[CRR_20260101.pdf#page=480|CRR Art. 325i]])
 
 - **Look-through** is the default for indices and multi-underlying options
 - Banks may opt **not** to look through for listed, widely recognised equity/credit indices meeting criteria (≥20 constituents, no single name >25%, top 10% <60%, market cap ≥ USD 40bn) — [[MAR_20260323.pdf#page=37|MAR21.31, page 37]]
@@ -216,3 +260,4 @@ $$RW_k = \min\left(RW_\sigma \cdot \frac{\sqrt{LH_{risk\_class}}}{\sqrt{10}},\; 
 - [[FRTB SA — Default Risk Charge]]
 - [[FRTB SA — Residual Risk Add-On]]
 - [[FRTB SA — Basel vs CRR3 Comparison]]
+- [[ISDA CRIF — FRTB-SA Data Standards]]
