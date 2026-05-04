@@ -27,11 +27,11 @@ created: 2026-04-21
 
 The separation between books is a critical regulatory control to prevent **regulatory arbitrage** — moving positions between books to reduce capital charges.
 
-| Aspect | Basel ([[Basel RBC25|RBC25]]) | EBA ([[EBA CRR — Trading and Banking Book|CRR]]) |
-|---|---|---|
-| Boundary strictness | Stringent — tight supervisory controls (RBC 25.7–25.10) | More flexible — regional adaptations (Art. 104b(3)) |
-| Transfer approval | Requires supervisory approval | Requires documentation + supervisory approval |
-| Reclassification | Tightly controlled | Phased approach for EU banks |
+| Aspect              | Basel ([[Basel RBC25]]                                  | [[RBC25]])                                          | EBA ([[EBA CRR — Trading and Banking Book | CRR]]) |
+| ------------------- | ------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------- | ------ |
+| Boundary strictness | Stringent — tight supervisory controls (RBC 25.7–25.10) | More flexible — regional adaptations (Art. 104b(3)) |                                           |        |
+| Transfer approval   | Requires supervisory approval                           | Requires documentation + supervisory approval       |                                           |        |
+| Reclassification    | Tightly controlled                                      | Phased approach for EU banks                        |                                           |        |
 
 > [!warning] Regulatory Arbitrage Risk
 > Both frameworks impose strict controls on book transfers precisely because reclassification can materially change a bank's capital requirements.
