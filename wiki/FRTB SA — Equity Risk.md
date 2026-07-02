@@ -31,21 +31,21 @@ Implied volatilities of options referencing equity spot prices, along **one dime
 
 13 buckets along **market cap** × **economy** × **sector**:
 
-| Bucket | Market Cap | Economy | Sector |
-|---|---|---|---|
-| 1 | Large | Emerging | Consumer goods, healthcare, transport, utilities |
-| 2 | Large | Emerging | Telecom, industrials |
-| 3 | Large | Emerging | Basic materials, energy, agriculture, mining |
-| 4 | Large | Emerging | Financials, real estate, technology |
-| 5 | Large | Advanced | Consumer goods, healthcare, transport, utilities |
-| 6 | Large | Advanced | Telecom, industrials |
-| 7 | Large | Advanced | Basic materials, energy, agriculture, mining |
-| 8 | Large | Advanced | Financials, real estate, technology |
-| 9 | Small | Emerging | All sectors (buckets 1–4) |
-| 10 | Small | Advanced | All sectors (buckets 5–8) |
-| 11 | — | — | Other sector |
-| 12 | — | — | Large cap, advanced economy indices |
-| 13 | — | — | Other equity indices |
+| Bucket | Market Cap | Economy  | Sector                                           |
+| ------ | ---------- | -------- | ------------------------------------------------ |
+| 1      | Large      | Emerging | Consumer goods, healthcare, transport, utilities |
+| 2      | Large      | Emerging | Telecom, industrials                             |
+| 3      | Large      | Emerging | Basic materials, energy, agriculture, mining     |
+| 4      | Large      | Emerging | Financials, real estate, technology              |
+| 5      | Large      | Advanced | Consumer goods, healthcare, transport, utilities |
+| 6      | Large      | Advanced | Telecom, industrials                             |
+| 7      | Large      | Advanced | Basic materials, energy, agriculture, mining     |
+| 8      | Large      | Advanced | Financials, real estate, technology              |
+| 9      | Small      | Emerging | All sectors (buckets 1–4)                        |
+| 10     | Small      | Advanced | All sectors (buckets 5–8)                        |
+| 11     | —          | —        | Other sector                                     |
+| 12     | —          | —        | Large cap, advanced economy indices              |
+| 13     | —          | —        | Other equity indices                             |
 
 ### Key Definitions
 - **Large cap**: market capitalisation ≥ **USD 2 billion** (MAR21.74)

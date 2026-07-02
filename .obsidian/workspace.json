@@ -4,26 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "107000e716051940",
+        "id": "bcc5bd646ac532e2",
         "type": "tabs",
         "children": [
           {
-            "id": "a34526e1cad98ccb",
+            "id": "56018b5d63b3bf83",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "raw/FRTB_SA_Risk-Data-Standards_v1.9.pdf",
-                "page": 35,
-                "left": -8,
-                "top": 575,
-                "zoom": 1.869582745414231
+                "file": "raw/MAR_20260323.pdf",
+                "page": 60,
+                "left": -146,
+                "top": 9,
+                "zoom": 1.25
               },
               "icon": "lucide-file-text",
-              "title": "FRTB_SA_Risk-Data-Standards_v1.9"
+              "title": "MAR_20260323"
+            }
+          },
+          {
+            "id": "c990b9f7a07d4a13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "agent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agent"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5086555480957
+    "width": 241.50271224975586
   },
   "right": {
     "id": "5212d204388528ae",
@@ -188,17 +203,35 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a34526e1cad98ccb",
+  "active": "ee000d2adeac91f7",
   "lastOpenFiles": [
-    "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9/e1c2a4ef7d85e289b15985ef06b31ed5501d71a8fc5ff7f74ccfb821669de082.jpg",
-    "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9/353b9685ff6541d7fbf0e1b39c579c372eada1df0bbe1e95d98e099aee28e7ac.jpg",
-    "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9/263c9ee916d100a8d7a97b470722cd5bd43b557df6cfb4cd8c7be428014c4fdf.jpg",
-    "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9",
-    "raw/MAR_20260323.md",
-    "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
-    "raw/CRR_20260101.pdf",
+    "wiki/FRTB SA — Commodity Risk.md",
+    "raw/MAR_20260323.pdf",
+    "wiki/FRTB SA — GIRR.md",
+    "wiki/FRTB SA — Sensitivities-Based Method.md",
+    "wiki/FRTB SA — Equity Risk.md",
+    "Untitled.base",
+    "Untitled.canvas",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.pdf",
+    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
+    "raw/Banking book Trading book comparison.md",
+    "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/fd7fa2ae31f8ddbc5db5e5edc2b689022e740d9bf42e4432655d397ed109470c.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/f9e0510543c9c1f603415c2e87909fc4550bfd00824a7c686848728e98baa5a5.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/f5cc754fe306e594acc75a3fb479a445dadb1a140e2ed7dbd7f80b777a8542c2.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/f0557b42c98bfc709ec7224ba0e6e92b4e9c68c9c7bd21cb810846c429572324.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/ee42bb133253fcd49c96a1e9713b9ae98930bd01fe95285d31fbceef0116babe.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/eb9b487398d84b2b56e57282618965a3aa2b079be628bc7e6aee41fffce90cf5.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/eb86c419c244728b6e76991cce4e1b083f02d25b8d7c7e1c90de72a7f71d263e.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/e0ea59d9cbf7db15bb9265a99a13ee63ab9633614a815056805e082033332fc3.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/ddd536ec17f49cf2b1513d021c1291413587c3ca90601adc570bda6ce39f93f5.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/d9a8189460924533eb8858719dcffe68ddfb5accb0d11fb90fa544fa999274cb.jpg",
+    "raw/images_FRTB_SA_Risk-Data-Standards_v1.9",
+    "raw/FRTB Impact Analysis.md",
+    "raw/MAR_20260323.md",
+    "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9",
+    "raw/CRR_20260101.pdf",
     "wiki/ISDA CRIF — FRTB-SA Data Standards.md",
     "wiki/Structural FX Positions.md",
     "wiki/Internal Risk Transfers.md",
@@ -208,25 +241,15 @@
     "wiki/CRR3 Article Map.md",
     "wiki/Basel RBC25.md",
     "wiki/Banking Book vs Trading Book.md",
-    "raw/Banking book Trading book comparison.md",
-    "raw/MAR_20260323.pdf",
-    "wiki/FRTB SA — Sensitivities-Based Method.md",
     "wiki/FRTB SA — Residual Risk Add-On.md",
-    "wiki/FRTB SA — Equity Risk.md",
-    "wiki/FRTB SA — GIRR.md",
     "wiki/FRTB SA — FX Risk.md",
     "TASKS.md",
     "PLAN.md",
-    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
     "wiki/FRTB SA — CSR CTP.md",
     "wiki/Basel vs EBA — Boundary Comparison.md",
-    "Untitled.base",
-    "raw/CRR_20260101.md",
     "raw/d457_FRTB_2019.pdf",
     "raw/RBC25.pdf",
     "raw/RBC25.pdf.crdownload",
-    "raw/RBC25_Boundary.pdf",
-    "wiki/FRTB SA — Commodity Risk.md",
-    "raw/crr_structure.txt"
+    "raw/RBC25_Boundary.pdf"
   ]
 }

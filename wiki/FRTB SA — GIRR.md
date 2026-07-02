@@ -242,11 +242,11 @@ $$\text{GIRR Delta Capital (medium)} = K_{EUR} = \mathbf{3.758 \text{ (EUR thous
 
 In practice, repeat steps 3–5 with adjusted correlations:
 
-| Scenario | ρ adjusted | $K_{EUR}$ | Capital |
-|---|---|---|---|
-| **Medium** | ρ as above | 3.758 | 3,758 |
-| **High** | min(1, ρ × 1.25) | 3.818 | 3,818 |
-| **Low** | ρ × 0.75 | 4.224 | **4,224** |
+| Scenario   | ρ adjusted       | $K_{EUR}$ | Capital   |
+| ---------- | ---------------- | --------- | --------- |
+| **Medium** | ρ as above       | 3.758     | 3,758     |
+| **High**   | min(1, ρ × 1.25) | 3.818     | 3,818     |
+| **Low**    | ρ × 0.75         | 4.224     | **4,224** |
 
 $$\text{GIRR Delta Capital} = \max(3{,}758,\; 3{,}818,\; 4{,}224) = \mathbf{4{,}224 \text{ EUR}}$$
 

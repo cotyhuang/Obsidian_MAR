@@ -67,6 +67,7 @@ This vault focuses on **Market Risk (MAR)** and related prudential banking regul
 - **Heading structure**: use a single `# H1` title, then `## H2` sections. Keep headings concise.
 - **Tables**: prefer markdown tables for comparisons and structured data.
 - **Callouts**: use Obsidian callout syntax (`> [!note]`, `> [!warning]`, etc.) for important distinctions.
+- **LaTeX Math Rendering**: Do not place raw currency symbols (such as `€`, `$`, `£`) or other non-standard math characters directly inside LaTeX math delimiters (`$` or `$$`). Instead, wrap them in `\text{}` (e.g., `\text{€}`) or place them outside the math block. Otherwise, KaTeX/MathJax will fail to render the equation and display raw LaTeX code instead.
 
 ### 3.3 Linking Convention
 
