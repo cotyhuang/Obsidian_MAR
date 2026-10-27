@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent.md",
+                "file": "wiki/Basel RBC25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "agent"
+              "title": "Basel RBC25"
             }
           }
         ],
@@ -203,8 +203,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ee000d2adeac91f7",
+  "active": "c990b9f7a07d4a13",
   "lastOpenFiles": [
+    "wiki/Basel vs EBA — Boundary Comparison.md",
+    "PLAN.md",
+    "TASKS.md",
+    "wiki/FRTB SA — FX Risk.md",
+    "agent.md",
     "wiki/FRTB SA — Commodity Risk.md",
     "raw/MAR_20260323.pdf",
     "wiki/FRTB SA — GIRR.md",
@@ -242,11 +247,7 @@
     "wiki/Basel RBC25.md",
     "wiki/Banking Book vs Trading Book.md",
     "wiki/FRTB SA — Residual Risk Add-On.md",
-    "wiki/FRTB SA — FX Risk.md",
-    "TASKS.md",
-    "PLAN.md",
     "wiki/FRTB SA — CSR CTP.md",
-    "wiki/Basel vs EBA — Boundary Comparison.md",
     "raw/d457_FRTB_2019.pdf",
     "raw/RBC25.pdf",
     "raw/RBC25.pdf.crdownload",
