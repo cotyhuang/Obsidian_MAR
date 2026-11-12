@@ -54,7 +54,7 @@ The following risks, **by themselves**, do not cause RRAO to apply:
 2. Smile risk
 3. Correlation risk from multi-underlying **European or American plain vanilla options** (including index options)
 4. Dividend risk from derivatives whose underlying is not solely dividends
-5. Index instruments treated under MAR21.31–21.32
+5. Index instruments treated under MAR21.31–21.32 (see [[FRTB SA — Look-Through Approach]]). However, for **equity investments in funds** subject to MAR21.36(3) (unrated "Other sector" Equity Bucket 11 treatment), banks **must assume the fund is exposed to exotic underlyings ($1.0\%$) and other residual risks ($0.1\%$) to the maximum possible extent allowed under the fund's mandate** (MAR23.6(5)).
 
 ---
 
@@ -134,6 +134,7 @@ The instruments subject to RRAO **do not change** the scope of risk factors in t
 268: ## See Also
 269: 
 270: - [[FRTB SA — Sensitivities-Based Method]]
+- [[FRTB SA — Look-Through Approach]]
 271: - [[FRTB SA — Default Risk Charge]]
 272: - [[FRTB Overview]]
 273: 

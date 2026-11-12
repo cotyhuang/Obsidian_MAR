@@ -3,6 +3,7 @@ tags: [MAR, FRTB, SbM, CSR, credit-spread]
 sources:
   - "[[raw/MAR_20260323]]"
   - "[[raw/CRR_20260101.pdf]]"
+  - "[[raw/Basel MAR Look-Through Approach Resources]]"
 created: 2026-04-21
 ---
 # FRTB SA — CSR Non-Securitisation
@@ -89,7 +90,7 @@ $$\rho_{kl} = \rho_{name} \times \rho_{tenor} \times \rho_{basis}$$
 | ρ_basis (bond vs CDS) | 1 | 99.90% |
 
 ### Buckets 17–18 (Index Buckets)
-Same structure but ρ_name = **80%** when different names (MAR21.55).
+Same structure but ρ_name = **80%** when different names (MAR21.55). Used when a bank opts **not** to apply the [[FRTB SA — Look-Through Approach|Look-Through Approach]] to a qualified credit index (or index-tracking debt fund with tracking difference $< 1\%$) where no single sector accounts for $> 75\%$ of index weight (MAR21.31–21.35): Bucket 17 applies if $\ge 75\%$ of constituents are Investment Grade; otherwise Bucket 18 (High Yield) applies.
 
 ### Bucket 16 (Other Sector)
 **No correlation** — aggregate by simple sum of absolute values of net weighted sensitivities (MAR21.56).
@@ -140,6 +141,7 @@ For CSR, the curvature risk weight is the **highest delta risk weight** in the b
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]
+- [[FRTB SA — Look-Through Approach]]
 - [[FRTB SA — CSR Securitisation]]
 - [[FRTB SA — CSR CTP]]
 - [[FRTB SA — Default Risk Charge]]

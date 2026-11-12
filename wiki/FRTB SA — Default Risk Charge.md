@@ -35,6 +35,10 @@ DRC is calculated separately for three portfolios, with **no diversification** b
 | 2 | Securitisation (non-CTP) | MAR22.27–22.35 |
 | 3 | Securitisation (CTP) | MAR22.36–22.45 |
 
+### Look-Through & Equity Investments in Funds ([[MAR_20260323.pdf#page=67|MAR22.5, 22.8, pages 67–68]])
+- **Non-Securitisation Credit & Equity Derivatives (MAR22.5)**: JTD risk positions by individual constituent issuer legal entity must be determined by applying a **[[FRTB SA — Look-Through Approach|Look-Through Approach]]** (where the JTD equivalent is the difference between the product's value assuming each single name defaults separately with zero recovery and its value assuming no names default).
+- **Funds Treated as Unrated "Other Sector" Equity (MAR22.8)**: Where a fund is assigned to Equity Bucket 11 under MAR21.36(3), it is treated as an **unrated equity instrument** ($\text{LGD} = 100\%$, MAR22.8 FAQ1). If the fund's mandate permits investing primarily in high-yield or distressed names, the bank must apply the **maximum effective average risk weight** achievable under the mandate (assuming maximum possible investment first in Defaulted $100\%$, then $\text{CCC } 50\%$, $\text{B } 30\%$, and $\text{BB } 15\%$), with **no offsetting or diversification** against other exposures.
+
 ---
 
 ## 3. Step-by-Step Calculation ([[MAR_20260323.pdf#page=67|MAR22.3, page 67]] / [[CRR_20260101.pdf#page=500|CRR Art. 325v]])
@@ -249,6 +253,7 @@ $$\text{DRC}_{non\text{-}sec} = \text{DRC}_{corp} + \text{DRC}_{sov} + \text{DRC
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]
+- [[FRTB SA — Look-Through Approach]]
 - [[FRTB SA — Residual Risk Add-On]]
 - [[FRTB SA — CSR Non-Securitisation]]
 - [[FRTB Overview]]

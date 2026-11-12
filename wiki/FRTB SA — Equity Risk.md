@@ -3,6 +3,7 @@ tags: [MAR, FRTB, SbM, equity]
 sources:
   - "[[raw/MAR_20260323]]"
   - "[[raw/CRR_20260101.pdf]]"
+  - "[[raw/Basel MAR Look-Through Approach Resources]]"
 created: 2026-04-21
 ---
 # FRTB SA — Equity Risk
@@ -51,6 +52,8 @@ Implied volatilities of options referencing equity spot prices, along **one dime
 - **Large cap**: market capitalisation ≥ **USD 2 billion** (MAR21.74)
 - **Small cap**: market capitalisation < USD 2 billion
 - **Advanced economies** (MAR21.75): Canada, US, Mexico, euro area, UK, Norway, Sweden, Denmark, Switzerland, Japan, Australia, New Zealand, Singapore, Hong Kong SAR
+- **Index Buckets (Buckets 12 & 13) & [[FRTB SA — Look-Through Approach|Look-Through Approach]]** (MAR21.31–21.33): Used when a bank opts **not** to look through a qualified listed equity index (or an index-tracking fund with tracking difference $< 1\%$ under MAR21.35(2)) where no single sector accounts for $> 75\%$ of index weight. Bucket 12 applies if $\ge 75\%$ of constituents are both large cap and advanced economy; otherwise Bucket 13 applies.
+- **Bucket 11 ("Other sector") & Non-Look-Through Funds** (MAR21.36(3)): In addition to specific "other sector" single-name equities, equity investments in funds that cannot be looked through (and do not use the index-tracking or mandate-based approach) may be allocated to **Bucket 11** ($\text{RW} = 70\%$, zero correlation recognition).
 
 ---
 
@@ -203,6 +206,7 @@ $$K_b = \max(K_b^+,\; K_b^-) = \max(0,\; 0) = \mathbf{0}$$
 ## See Also
 
 - [[FRTB SA — Sensitivities-Based Method]]
+- [[FRTB SA — Look-Through Approach]]
 - [[FRTB SA — Commodity Risk]]
 - [[FRTB SA — FX Risk]]
 - [[FRTB SA — Default Risk Charge]]

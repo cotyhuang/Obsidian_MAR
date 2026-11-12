@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Basel RBC25.md",
+                "file": "wiki/FRTB SA — Look-Through Approach.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basel RBC25"
+              "title": "FRTB SA — Look-Through Approach"
             }
           }
         ],
@@ -58,7 +58,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -95,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.50271224975586
+    "width": 391.5
   },
   "right": {
     "id": "5212d204388528ae",
@@ -205,6 +207,13 @@
   },
   "active": "c990b9f7a07d4a13",
   "lastOpenFiles": [
+    "wiki/FRTB SA — Residual Risk Add-On.md",
+    "wiki/FRTB SA — Sensitivities-Based Method.md",
+    "wiki/Git Status Icons in VSCode.md",
+    "raw/Basel MAR Look-Through Approach Resources.md",
+    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
+    "wiki/EBA CRR — Trading and Banking Book.md",
+    "wiki/Basel RBC25.md",
     "wiki/Basel vs EBA — Boundary Comparison.md",
     "PLAN.md",
     "TASKS.md",
@@ -213,13 +222,11 @@
     "wiki/FRTB SA — Commodity Risk.md",
     "raw/MAR_20260323.pdf",
     "wiki/FRTB SA — GIRR.md",
-    "wiki/FRTB SA — Sensitivities-Based Method.md",
     "wiki/FRTB SA — Equity Risk.md",
     "Untitled.base",
     "Untitled.canvas",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.pdf",
-    "raw/MAR vs. CRR Market Risk Standardised Approach Comparison.md",
     "raw/Banking book Trading book comparison.md",
     "raw/CapitalCRIF_SACCR_Risk-Data-Standards_v1.9.md",
     "raw/images_FRTB_SA_Risk-Data-Standards_v1.9/fd7fa2ae31f8ddbc5db5e5edc2b689022e740d9bf42e4432655d397ed109470c.jpg",
@@ -240,14 +247,9 @@
     "wiki/ISDA CRIF — FRTB-SA Data Standards.md",
     "wiki/Structural FX Positions.md",
     "wiki/Internal Risk Transfers.md",
-    "wiki/Git Status Icons in VSCode.md",
     "wiki/INDEX.md",
-    "wiki/EBA CRR — Trading and Banking Book.md",
     "wiki/CRR3 Article Map.md",
-    "wiki/Basel RBC25.md",
     "wiki/Banking Book vs Trading Book.md",
-    "wiki/FRTB SA — Residual Risk Add-On.md",
-    "wiki/FRTB SA — CSR CTP.md",
     "raw/d457_FRTB_2019.pdf",
     "raw/RBC25.pdf",
     "raw/RBC25.pdf.crdownload",

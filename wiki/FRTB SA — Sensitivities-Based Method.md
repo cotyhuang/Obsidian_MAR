@@ -3,6 +3,7 @@ tags: [MAR, FRTB, SbM, SA, BaselFramework]
 sources:
   - "[[raw/MAR_20260323]]"
   - "[[raw/CRR_20260101.pdf]]"
+  - "[[raw/Basel MAR Look-Through Approach Resources]]"
 created: 2026-04-21
 ---
 # FRTB SA — Sensitivities-Based Method
@@ -366,17 +367,25 @@ $$\text{FX Vega Capital} = K_{EUR} = 15{,}297$$
 
 ---
 
-## 13. Treatment of Index Instruments ([[MAR_20260323.pdf#page=36|MAR21.31–21.34, page 36]] / [[CRR_20260101.pdf#page=480|CRR Art. 325i]])
+## 13. Treatment of Index Instruments, Multi-Underlying Options & Funds ([[MAR_20260323.pdf#page=36|MAR21.31–21.38, page 36]] / [[CRR_20260101.pdf#page=480|CRR Art. 325i–325j]])
 
-- **Look-through** is the default for indices and multi-underlying options
-- Banks may opt **not** to look through for listed, widely recognised equity/credit indices meeting criteria (≥20 constituents, no single name >25%, top 10% <60%, market cap ≥ USD 40bn) — [[MAR_20260323.pdf#page=37|MAR21.31, page 37]]
-- When look-through is not applied, the index is assigned to a sector-specific bucket or an index bucket — [[MAR_20260323.pdf#page=38|MAR21.33, page 38]]
+> [!info] Main Article: [[FRTB SA — Look-Through Approach]]
+
+- **Default Look-Through Rule ([[MAR_20260323.pdf#page=8|MAR10.8]], [[MAR_20260323.pdf#page=36|MAR21.31]])**: For delta and curvature risk, the **Look-Through Approach (LTA)** is the default for index instruments, multi-underlying options, and equity investments in funds (EIIFs / CIUs). Under full look-through, underlying constituents are treated as if held directly by the bank and mapped across **all seven SBM risk classes** (plus [[FRTB SA — Default Risk Charge|DRC]]).
+- **Qualified Index "No Look-Through" Opt-Out ([[MAR_20260323.pdf#page=37|MAR21.31–21.33, page 37]])**: Banks may opt **not** to look through listed, widely recognised **equity** or **credit** indices meeting five criteria (constituents/weights known, $\ge 20$ constituents, no single name $> 25\%$, top $10\% < 60\%$, total market cap $\ge \text{USD } 40\text{bn}$ [$\text{EUR } 40\text{bn}$ under CRR3 Art. 325i]).
+  - When look-through is not applied, the single index sensitivity applies to only **two SBM risk classes** — **[[FRTB SA — Equity Risk|Equity Risk]]** or **[[FRTB SA — CSR Non-Securitisation|CSR Non-Securitisation]]** — and is assigned to a specific sector bucket (if $> 75\%$ of index weight is in one sector) or to dedicated **Index Buckets** (Equity Buckets 12–13; CSR Non-Sec Buckets 17–18).
+- **Index CTP Exception ([[MAR_20260323.pdf#page=37|MAR21.34(2), page 37]])**: Index instruments in the [[FRTB SA — CSR CTP|Correlation Trading Portfolio (CTP)]] **cannot** be broken down into constituents and are treated as a single risk factor mapped via the $\ge 75\%$ sector rule (or Bucket 16).
+- **Vega Risk Exemption ([[MAR_20260323.pdf#page=39|MAR21.38, page 39]])**: Multi-underlying options do not require look-through for **vega risk**, regardless of whether delta/curvature look-through is applied.
+- **Equity Investments in Funds ([[MAR_20260323.pdf#page=38|MAR21.35–21.37, page 38]] / [[CRR_20260101.pdf#page=482|CRR Art. 325j]])**:
+  1. **Look-through funds (RBC25.8(5)(a))**: Mandatory look-through across all underlying risk classes (proportional to fund share and leverage), unless tracking a qualified index with annualised tracking difference $< 1\%$ (MAR21.35(2)).
+  2. **Non-look-through funds with daily prices & mandate (RBC25.8(5)(b))**: Must use SA (MAR11.9(2)) via one of three methods: (i) Index-tracking ($< 1\%$ tracking difference), (ii) Supervisory-approved **Mandate-Based Hypothetical Portfolio** (standalone worst-case across mandate-permitted risk classes), or (iii) **Unrated "Other Sector" Equity (Equity Bucket 11, $\text{RW} = 70\%$)** plus mandate-based [[FRTB SA — Default Risk Charge|DRC]] (MAR22.8) and [[FRTB SA — Residual Risk Add-On|RRAO]] (MAR23.6(5)).
 
 ---
 
 ## See Also
 
 - [[FRTB Overview]]
+- [[FRTB SA — Look-Through Approach]]
 - [[FRTB SA — GIRR]]
 - [[FRTB SA — CSR Non-Securitisation]]
 - [[FRTB SA — CSR Securitisation]]
