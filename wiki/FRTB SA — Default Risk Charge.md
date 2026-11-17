@@ -61,11 +61,11 @@ Where:
 
 ### LGD Assignments ([[MAR_20260323.pdf#page=69|MAR22.12, page 69]] / [[CRR_20260101.pdf#page=501|CRR Art. 325w]])
 
-| Instrument Type | LGD |
-|---|---|
-| Equity & non-senior debt | **100%** |
-| Senior debt | **75%** |
-| Covered bonds | **25%** |
+| Instrument Type              | LGD                   |
+| ---------------------------- | --------------------- |
+| Equity & non-senior debt     | **100%**              |
+| Senior debt                  | **75%**               |
+| Covered bonds                | **25%**               |
 | Price not linked to recovery | No LGD multiplication |
 
 ### Maturity Scaling ([[MAR_20260323.pdf#page=69|MAR22.15, page 69]], [[MAR_20260323.pdf#page=70|MAR22.18, page 70]] / [[CRR_20260101.pdf#page=501|CRR Art. 325w]])
@@ -183,13 +183,13 @@ A bank holds 5 credit exposures, all in the **Corporate bucket**:
 
 $$\text{JTD} = \text{LGD} \times \text{Notional} + \text{P\&L}$$
 
-| # | LGD | LGD × Notional | P&L (MV − Notional) | JTD (raw) | Long/Short? |
-|---|---|---|---|---|---|
-| 1 | 75% (senior) | +75M | 95 − 100 = −5M | +70M | Long (max with 0) |
-| 2 | 75% (senior) | −60M | −82 − (−80) = −2M | −62M | Short (min with 0) |
-| 3 | 75% (senior) | +37.5M | 48 − 50 = −2M | +35.5M | Long |
-| 4 | 100% (equity) | +30M | 30 − 30 = 0 | +30M | Long |
-| 5 | 75% (senior) | −30M | −38 − (−40) = +2M | −28M | Short |
+| #   | LGD           | LGD × Notional | P&L (MV − Notional) | JTD (raw) | Long/Short?        |
+| --- | ------------- | -------------- | ------------------- | --------- | ------------------ |
+| 1   | 75% (senior)  | +75M           | 95 − 100 = −5M      | +70M      | Long (max with 0)  |
+| 2   | 75% (senior)  | −60M           | −82 − (−80) = −2M   | −62M      | Short (min with 0) |
+| 3   | 75% (senior)  | +37.5M         | 48 − 50 = −2M       | +35.5M    | Long               |
+| 4   | 100% (equity) | +30M           | 30 − 30 = 0         | +30M      | Long               |
+| 5   | 75% (senior)  | −30M           | −38 − (−40) = +2M   | −28M      | Short              |
 
 ### Step 2 — Maturity Scaling ([[MAR_20260323.pdf#page=69|MAR22.15, page 69]])
 

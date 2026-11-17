@@ -29,16 +29,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Basel RBC25.md",
+                "file": "wiki/FRTB SA — Default Risk Charge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basel RBC25"
+              "title": "FRTB SA — Default Risk Charge"
+            }
+          },
+          {
+            "id": "770902854fb3e7df",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "raw/MAR_20260323.pdf",
+                "page": 71,
+                "left": -20,
+                "top": 720,
+                "zoom": 0.8025634995296332
+              },
+              "icon": "lucide-file-text",
+              "title": "MAR_20260323"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -58,7 +74,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -203,18 +221,27 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c990b9f7a07d4a13",
+  "active": "770902854fb3e7df",
   "lastOpenFiles": [
+    "wiki/FRTB SA — Default Risk Charge.md",
+    "wiki/FRTB SA — Residual Risk Add-On.md",
+    "wiki/FRTB SA — Sensitivities-Based Method.md",
+    "wiki/Structural FX Positions.md",
+    "agent.md",
     "wiki/Basel vs EBA — Boundary Comparison.md",
+    "wiki/CRR3 Article Map.md",
+    "wiki/Banking Book vs Trading Book.md",
+    "wiki/Basel RBC25.md",
+    "wiki/FRTB SA — CSR CTP.md",
+    "wiki/FRTB SA — Equity Risk.md",
+    "wiki/FRTB SA — FX Risk.md",
+    "wiki/Internal Risk Transfers.md",
+    "wiki/Trading Intent.md",
     "PLAN.md",
     "TASKS.md",
-    "wiki/FRTB SA — FX Risk.md",
-    "agent.md",
     "wiki/FRTB SA — Commodity Risk.md",
     "raw/MAR_20260323.pdf",
     "wiki/FRTB SA — GIRR.md",
-    "wiki/FRTB SA — Sensitivities-Based Method.md",
-    "wiki/FRTB SA — Equity Risk.md",
     "Untitled.base",
     "Untitled.canvas",
     "raw/FRTB_SA_Risk-Data-Standards_v1.9.md",
@@ -238,16 +265,7 @@
     "raw/images_CapitalCRIF_SACCR_Risk-Data-Standards_v1.9",
     "raw/CRR_20260101.pdf",
     "wiki/ISDA CRIF — FRTB-SA Data Standards.md",
-    "wiki/Structural FX Positions.md",
-    "wiki/Internal Risk Transfers.md",
     "wiki/Git Status Icons in VSCode.md",
-    "wiki/INDEX.md",
-    "wiki/EBA CRR — Trading and Banking Book.md",
-    "wiki/CRR3 Article Map.md",
-    "wiki/Basel RBC25.md",
-    "wiki/Banking Book vs Trading Book.md",
-    "wiki/FRTB SA — Residual Risk Add-On.md",
-    "wiki/FRTB SA — CSR CTP.md",
     "raw/d457_FRTB_2019.pdf",
     "raw/RBC25.pdf",
     "raw/RBC25.pdf.crdownload",
