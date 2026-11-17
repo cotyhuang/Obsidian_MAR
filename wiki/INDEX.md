@@ -1,7 +1,7 @@
 ---
 tags: [index, wiki, MAR]
 created: 2026-04-21
-updated: 2026-04-27
+updated: 2026-11-12
 ---
 # Wiki Index — MAR Knowledge Base
 
@@ -36,6 +36,7 @@ updated: 2026-04-27
 - [[FRTB SA — FX Risk]] — Foreign exchange risk: specified currency pairs, worked example.
 
 ### Other SA Components
+- [[FRTB SA — Look-Through Approach]] — Look-Through Approach (LTA) for index instruments, multi-underlying options, and equity investments in funds (EIIFs / CIUs) across MAR10, MAR21, MAR22, MAR23, and CRR3 Art. 325i–325j.
 - [[FRTB SA — Default Risk Charge]] — DRC: jump-to-default risk, LGD, Hedge Benefit Ratio, risk weights by rating.
 - [[FRTB SA — Residual Risk Add-On]] — RRAO: exotic underlyings (1.0%) and other residual risks (0.1%).
 
@@ -82,3 +83,4 @@ All wiki content is distilled from raw materials in `raw/`:
 | [[raw/Banking book Trading book comparison]] | Basel vs EBA boundary comparison notes |
 | [[raw/MAR vs. CRR Market Risk Standardised Approach Comparison]] | MAR vs CRR SA methodology comparison |
 | [[raw/crr_structure.txt]] | CRR3 article-to-page index |
+| [[raw/Basel MAR Look-Through Approach Resources]] | Web resources and regulatory synthesis for the Basel MAR Look-Through Approach (MAR10.8, MAR21.31–21.38, MAR22.5/22.8, CRR3 Art. 325i–325j) |

@@ -36,8 +36,8 @@ created: 2026-04-27
 | **325f** | Delta & Vega aggregation formula | [[CRR_20260101.pdf#page=475\|p.475]] | [[FRTB SA — Sensitivities-Based Method]] |
 | **325g** | Curvature aggregation formula | [[CRR_20260101.pdf#page=477\|p.477]] | [[FRTB SA — Sensitivities-Based Method]] |
 | **325h** | Three correlation scenarios (High/Medium/Low) | [[CRR_20260101.pdf#page=480\|p.480]] | [[FRTB SA — Sensitivities-Based Method]] |
-| **325i** | Treatment of index instruments | [[CRR_20260101.pdf#page=480\|p.480]] | [[FRTB SA — Sensitivities-Based Method]] |
-| **325j** | Cross-bucket correlations — general | [[CRR_20260101.pdf#page=482\|p.482]] | [[FRTB SA — Sensitivities-Based Method]] |
+| **325i** | Treatment of index instruments and other multi-underlying instruments | [[CRR_20260101.pdf#page=480\|p.480]] | [[FRTB SA — Look-Through Approach]], [[FRTB SA — Sensitivities-Based Method]] |
+| **325j** | Treatment of collective investment undertakings (CIUs) | [[CRR_20260101.pdf#page=482\|p.482]] | [[FRTB SA — Look-Through Approach]] |
 
 ---
 
